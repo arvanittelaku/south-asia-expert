@@ -4,4 +4,4 @@ Allow: /
 Disallow: /thank-you
 Disallow: /api/
 
-Sitemap: https://www.somaliaexpert.com/sitemap.xml
+Sitemap: https://www.southasiaexpert.com/sitemap.xml

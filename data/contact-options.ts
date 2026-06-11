@@ -1,19 +1,20 @@
 export const CASE_PROFILES = [
-  "Clan Minority",
-  "Al-Shabaab",
-  "FGM/GBV",
-  "Failed Asylum Seeker",
-  "Diaspora/No Clan Support",
-  "Former Official",
-  "Women/Discriminatory Practices",
+  "Political Persecution",
+  "Religious Minority",
+  "LGBTQ+",
+  "Caste",
+  "Women / GBV",
+  "Journalist / HRD",
+  "Diaspora Activity",
   "Other",
 ] as const;
 
-export const REGIONS = [
-  "Mogadishu",
-  "Somaliland",
-  "Puntland",
-  "South/Central",
+export const COUNTRIES = [
+  "Bangladesh",
+  "India",
+  "Sri Lanka",
+  "Nepal",
+  "Bhutan",
   "Multiple / Not Sure",
 ] as const;
 

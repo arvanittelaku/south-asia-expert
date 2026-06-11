@@ -7,59 +7,59 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    id: "country-condition-reports",
-    title: "Country Condition Reports (Mogadishu and Regional)",
-    navLabel: "Country Condition Reports",
+    id: "bangladesh-reports",
+    title: "Bangladesh Country Condition Reports",
+    navLabel: "Bangladesh Reports",
     description:
-      "Comprehensive country condition reports covering Mogadishu, Somaliland, Puntland, and south/central Somalia. Updated with July 2025 CPINs, MOJ country guidance, and 2025-2026 security developments including Al-Shabaab's renewed offensive.",
+      "Post-August 2024 political transition analysis, BNP/Awami League persecution, Hindu minority, LGBTQ+ criminalisation, and journalist persecution reports for UK tribunals.",
   },
   {
-    id: "clan-analysis",
-    title: "Clan Analysis Reports",
-    navLabel: "Clan Analysis",
+    id: "india-reports",
+    title: "India Country Reports",
+    navLabel: "India Reports",
     description:
-      "Independent assessment of claimed clan membership, sub-clan affiliation, dialect, geographic origin, and protection availability. Essential for MOJ diaspora test claims and minority clan vulnerability analysis.",
+      "Hindutva/RSS targeting of Muslims, Sikh Khalistan claims, Christian minority persecution, caste discrimination, CAA/NRC analysis, and internal relocation feasibility reports.",
   },
   {
-    id: "al-shabaab-risk",
-    title: "Al-Shabaab Risk Assessment",
-    navLabel: "Al-Shabaab Risk Assessment",
+    id: "sri-lanka-reports",
+    title: "Sri Lanka Country Reports",
+    navLabel: "Sri Lanka Reports",
     description:
-      "Case-specific analysis of Al-Shabaab targeting risk for government officials, community leaders, tax refusers, and those who have escaped forced recruitment. Incorporates July 2025 Mogadishu security CPIN and 2026 territorial developments.",
+      "KK [2021] country guidance framework analysis, Tamil/LTTE association claims, diaspora activism risk, and political opposition persecution reports.",
   },
   {
-    id: "fgm-reports",
-    title: "FGM Expert Reports",
-    navLabel: "FGM Expert Reports",
+    id: "nepal-bhutan-reports",
+    title: "Nepal/Bhutan Country Reports",
+    navLabel: "Nepal/Bhutan Reports",
     description:
-      "Expert evidence on FGM prevalence, daughter-at-risk claims, and gender-based violence in Somalia. Grounded in AMM and Others [2011] country guidance and current regional enforcement patterns.",
-  },
-  {
-    id: "internal-relocation",
-    title: "Internal Relocation Analysis",
-    navLabel: "Internal Relocation",
-    description:
-      "Assessment of internal relocation viability to Mogadishu, Somaliland, or Puntland. Addresses MOJ framework, clan connection requirements, Article 15(c) analysis for south/central Somalia, and Al-Shabaab territorial control.",
-  },
-  {
-    id: "moj-framework",
-    title: "MOJ Framework Application",
-    navLabel: "MOJ Framework",
-    description:
-      "Specialist reports applying MOJ and Others (Return to Mogadishu) Somalia CG [2014] UKUT 004442 to individual appellant profiles, including diaspora test, clan support analysis, and 2025-2026 security updates.",
+      "Maoist-linked claims, Dalit caste discrimination, Madhesi and Janajati ethnic minorities, Lhotshampa persecution, and political dissident reports where no UK country guidance exists.",
   },
   {
     id: "cpin-challenge",
     title: "CPIN Challenge Reports",
     navLabel: "CPIN Challenge Reports",
     description:
-      "Independent expert analysis challenging Home Office CPIN positions on Somalia. Cites field research, ACLED data, UN reports, and EUAA October 2025 country guidance beyond generic CPIN conclusions.",
+      "Independent analysis challenging Home Office CPIN positions on South Asian countries, addressing gaps in coverage and profile-specific risk factors.",
+  },
+  {
+    id: "internal-relocation",
+    title: "Internal Relocation Analysis",
+    navLabel: "Internal Relocation",
+    description:
+      "Assessment of internal relocation viability within India and other South Asian countries, challenging Home Office arguments where persecutors have national reach.",
+  },
+  {
+    id: "bangladesh-post-2024",
+    title: "Post-August 2024 Bangladesh Reports",
+    navLabel: "Post-2024 Bangladesh",
+    description:
+      "Specialist reports addressing the changed political landscape following Sheikh Hasina's departure, assessing current risk for BNP, Awami League, and minority profiles.",
   },
   {
     id: "oral-evidence",
     title: "Oral Evidence at Tribunal",
     navLabel: "Oral Evidence",
     description:
-      "Qualified Somalia experts available for oral evidence at First-tier Tribunal and Upper Tribunal hearings. CPR Part 35 compliant with Immigration Tribunal Practice Direction paragraph 10 requirements.",
+      "Expert attendance at FTT and Upper Tribunal hearings to give oral evidence, respond to cross-examination, and assist the tribunal with country conditions analysis.",
   },
 ];

@@ -1,14 +1,16 @@
-# SEO Architecture — somaliaexpert.com
+# SEO Architecture — southasiaexpert.com
 
-**Canonical domain:** `https://www.somaliaexpert.com`  
-**Site name:** SomaliaExpert  
+**Canonical domain:** `https://www.southasiaexpert.com`  
+**Site name:** SouthAsiaExpert  
 **Locale:** `en_GB` (UK immigration solicitors, law firms, Legal Aid practitioners)
 
-This document is the single source of truth for keyword strategy, unique content assets, content clusters, internal linking, GEO (Generative Engine Optimization), off-page SEO, schema architecture, and launch deployment for somaliaexpert.com. All slugs and URLs align with the canonical routes in `data/` and the App Router.
+This document is the single source of truth for keyword strategy, unique content assets, content clusters, internal linking, GEO (Generative Engine Optimization), off-page SEO, schema architecture, and launch deployment for southasiaexpert.com. All slugs and URLs align with the canonical routes in `data/` and the App Router.
+
+**Pakistan exclusion:** Pakistan asylum claims are covered separately at `pakistancountryexpert.com`. This site covers Bangladesh, India, Sri Lanka, Nepal, and Bhutan only.
 
 **Implementation status:** Implemented in codebase (June 2026). Canonical slugs, internal linking matrix (`data/related-links.ts`), GEO artifacts, schema, sitemap inventory (`lib/seo/publicUrlInventory.ts`), and 301 redirects (`lib/seo/slug-redirects.ts`, `middleware.ts`) align with this document. Run `npm run seo:verify` after SEO changes.
 
-**Related files:** `data/asylum-profiles.ts`, `data/regions.ts`, `data/guides.ts`, `data/case-types.ts`, `data/glossary.ts`, `data/services.ts`, `data/cpin-data.ts`, `data/profile-geo.ts`, `data/related-links.ts`, `lib/metadata.ts`, `lib/schema.ts`, `lib/constants.ts`, `lib/seo/publicUrlInventory.ts`, `scripts/generate-seo.ts`, `scripts/verify-seo.ts`
+**Related files:** `data/asylum-profiles.ts`, `data/countries.ts`, `data/guides.ts`, `data/case-types.ts`, `data/glossary.ts`, `data/services.ts`, `data/cpin-data.ts`, `data/profile-geo.ts`, `data/related-links.ts`, `lib/metadata.ts`, `lib/schema.ts`, `lib/constants.ts`, `lib/glossary-links.ts`, `lib/seo/publicUrlInventory.ts`, `scripts/generate-seo.ts`, `scripts/verify-seo.ts`
 
 ---
 
@@ -20,50 +22,46 @@ This document is the single source of truth for keyword strategy, unique content
 
 | Keyword | Primary URL |
 |---------|-------------|
-| Somalia expert witness UK | `/`, `/what-is-a-somalia-expert-witness` |
-| Somalia country expert UK | `/`, `/services` |
-| Somalia asylum expert report UK | `/services`, `/how-to-instruct` |
-| Somalia country report solicitor | `/services`, `/cpin-country-guidance` |
-| Somalia clan expert witness UK | `/asylum-profiles/clan-minority-groups`, `/services#clan-analysis` |
-| Somalia Al-Shabaab expert report | `/asylum-profiles/al-shabaab-targeting`, `/services#al-shabaab-risk` |
-| Somalia FGM expert witness UK | `/asylum-profiles/fgm-gender-based-violence`, `/services#fgm-reports` |
-| Somalia MOJ expert report UK | `/moj-country-guidance`, `/services#moj-framework` |
-| Somalia Mogadishu expert witness | `/regions/mogadishu-return`, `/moj-country-guidance` |
-| Legal Aid Somalia expert UK | `/fees`, `/guides/instructing-somalia-expert`, `/how-to-instruct` |
+| South Asia expert witness UK | `/`, `/what-is-a-south-asia-expert-witness` |
+| Bangladesh expert witness UK | `/countries/bangladesh`, `/services#bangladesh-reports` |
+| India expert witness UK asylum | `/countries/india`, `/services#india-reports` |
+| Sri Lanka expert witness UK | `/countries/sri-lanka`, `/services#sri-lanka-reports` |
+| South Asia asylum expert report UK | `/services`, `/how-to-instruct` |
+| Bangladesh political persecution expert UK | `/asylum-profiles/political-persecution-south-asia`, `/case-types/bangladesh-political-claims` |
+| India Hindutva expert witness UK | `/asylum-profiles/religious-minority-persecution`, `/guides/india-asylum-guide` |
+| Sri Lanka Tamil expert witness UK | `/countries/sri-lanka`, `/case-types/sri-lanka-tamil-claims` |
+| Legal Aid South Asia expert UK | `/how-to-instruct`, `/guides/instructing-south-asia-expert` |
 
 ### Tier 2 — Informational
 
-**Target pages:** MOJ pillar, CPIN hub, guides, asylum profiles, regions, glossary.
+**Target pages:** pillar page, CPIN hub, guides, asylum profiles, countries, glossary.
 
 | Keyword | Primary URL |
 |---------|-------------|
-| MOJ Somalia country guidance 2014 | `/moj-country-guidance`, `/glossary#moj-and-others-2014` |
-| MOJ framework Somalia returns | `/moj-country-guidance`, `/guides/moj-framework-guide` |
-| Somalia Al-Shabaab 2025 2026 update | `/guides/al-shabaab-asylum-guide`, `/asylum-profiles/al-shabaab-targeting`, `/moj-country-guidance` |
-| Somalia clan minority asylum UK | `/asylum-profiles/clan-minority-groups`, `/case-types/clan-minority-asylum` |
-| Somalia ATMIS withdrawal asylum | `/moj-country-guidance`, `/glossary#atmis`, `/cpin-country-guidance` |
-| Somaliland expert witness UK | `/regions/somaliland`, `/case-types/somaliland-asylum` |
-| Puntland asylum expert UK | `/regions/puntland`, `/guides/somaliland-puntland-guide` |
-| Somalia FGM asylum prevalence | `/asylum-profiles/fgm-gender-based-violence`, `/guides/fgm-somalia-guide` |
-| Somalia return risk 2026 | `/regions/mogadishu-return`, `/asylum-profiles/failed-asylum-seekers-return` |
-| EUAA Somalia country guidance 2025 | `/cpin-country-guidance`, `/glossary#euaa-country-guidance` |
+| South Asian asylum claims UK guide | `/south-asia-asylum-explained` |
+| Bangladesh asylum 2024 political transition | `/guides/bangladesh-asylum-2024-guide`, `/countries/bangladesh` |
+| KK Sri Lanka country guidance 2021 | `/guides/sri-lanka-kk-guide`, `/glossary#kk-and-others-2021` |
+| India Muslim minority asylum UK | `/asylum-profiles/religious-minority-persecution`, `/countries/india` |
+| LGBTQ+ South Asia asylum UK | `/asylum-profiles/lgbtq-south-asia`, `/countries/bangladesh` |
+| South Asia CPIN country guidance | `/cpin-country-guidance`, `/guides/south-asia-cpin-guide` |
+| Caste discrimination asylum India Nepal | `/asylum-profiles/caste-discrimination`, `/guides/nepal-bhutan-expert-guide` |
+| Tamil diaspora return risk Sri Lanka | `/asylum-profiles/diaspora-activity-risk-on-return`, `/countries/sri-lanka` |
 
 ### Tier 3 — Long-tail
 
-**Target pages:** asylum profiles, guides, case types, regions, fees, qualifications.
+**Target pages:** asylum profiles, guides, case types, countries, qualifications.
 
 | Keyword | Primary URL(s) |
 |---------|----------------|
-| Somalia clan minority Benadiri expert witness UK | `/asylum-profiles/clan-minority-groups`, `/glossary#benadiri`, `/case-types/clan-minority-asylum` |
-| Al-Shabaab forced recruitment asylum expert UK | `/asylum-profiles/forced-recruitment-conscription`, `/guides/al-shabaab-asylum-guide` |
-| MOJ diaspora test Somalia expert witness | `/moj-country-guidance`, `/asylum-profiles/diaspora-without-clan-support`, `/guides/moj-framework-guide` |
-| Somalia Somaliland asylum expert report UK | `/regions/somaliland`, `/case-types/somaliland-asylum`, `/guides/somaliland-puntland-guide` |
-| South central Somalia article 15c expert | `/case-types/article-15c-south-central`, `/regions/south-central-somalia` |
-| Somalia FGM daughter at risk expert UK | `/asylum-profiles/fgm-gender-based-violence`, `/case-types/fgm-somalia-asylum` |
-| Mogadishu return clan support expert report | `/regions/mogadishu-return`, `/moj-country-guidance`, `/asylum-profiles/failed-asylum-seekers-return` |
-| Somalia CPIN challenge expert witness UK | `/cpin-country-guidance`, `/services#cpin-challenge`, `/case-types/upper-tribunal-somalia` |
-| ATMIS withdrawal Somalia asylum expert | `/glossary#atmis`, `/moj-country-guidance`, `/cpin-country-guidance` |
-| Somalia OA 2022 country guidance expert | `/cpin-country-guidance`, `/glossary#oa-and-others-2022`, `/case-types/fresh-claims-somalia` |
+| Bangladesh BNP Awami League expert witness UK | `/asylum-profiles/political-persecution-south-asia`, `/glossary#bnp`, `/glossary#awami-league` |
+| Post-August 2024 Bangladesh asylum expert | `/services#bangladesh-post-2024`, `/guides/bangladesh-asylum-2024-guide` |
+| Hindutva RSS Muslim persecution expert UK | `/glossary#hindutva`, `/glossary#rss`, `/asylum-profiles/religious-minority-persecution` |
+| Sri Lanka LTTE association expert witness | `/case-types/sri-lanka-tamil-claims`, `/glossary#ltte` |
+| Nepal Dalit caste expert witness UK | `/countries/nepal`, `/glossary#dalit`, `/asylum-profiles/caste-discrimination` |
+| Bhutan Lhotshampa expert witness UK | `/countries/bhutan`, `/glossary#lhotshampa` |
+| South Asia CPIN challenge expert witness | `/cpin-country-guidance`, `/services#cpin-challenge`, `/case-types/upper-tribunal-south-asia` |
+| Journalist persecution Bangladesh India expert | `/asylum-profiles/journalists-human-rights-defenders` |
+| Failed asylum seeker return South Asia expert | `/asylum-profiles/failed-asylum-seekers-return`, `/case-types/deportation-return-south-asia` |
 
 ### Keyword → URL implementation reference
 
@@ -71,47 +69,48 @@ This document is the single source of truth for keyword strategy, unique content
 |---------|-------------|-------------|
 | Brand / transactional | `/` | Page-level `createMetadata()` |
 | Asylum profile transactional | `/asylum-profiles/{slug}` | `metaTitle`, `metaDescription`, `h1` in `data/asylum-profiles.ts` |
-| MOJ pillar / informational | `/moj-country-guidance` | Page-level metadata + section anchors |
+| Pillar / informational | `/south-asia-asylum-explained` | Page-level metadata + Article schema |
 | CPIN pillar / informational | `/cpin-country-guidance` | Page-level metadata + `data/cpin-data.ts` |
-| Regional informational | `/regions/{slug}` | `data/regions.ts` |
+| Country informational | `/countries/{slug}` | `data/countries.ts` |
 | Case-type transactional | `/case-types/{slug}` | `data/case-types.ts` |
 | Informational guides | `/guides/{slug}` | `data/guides.ts` |
-| Utility / process | `/how-to-instruct`, `/fees`, `/qualifications`, `/faq` | Page-level metadata |
+| Utility / process | `/how-to-instruct`, `/qualifications` | Page-level metadata |
 | Services | `/services`, `/services#{id}` | `data/services.ts` |
 
 ---
 
 ## 2. Unique Content Assets
 
-Five competitive differentiators that distinguish somaliaexpert.com from generic country-expert directories.
+Five competitive differentiators that distinguish southasiaexpert.com from generic country-expert directories.
 
 | # | Asset | URL(s) | Status |
 |---|-------|--------|--------|
-| 1 | MOJ framework pillar — most comprehensive MOJ framework guide in the market | `/moj-country-guidance` | **Live** — `mojFrameworkTable` from `data/cpin-data.ts` |
-| 2 | Regional structure — Mogadishu, Somaliland, Puntland, South/Central | `/regions`, `/regions/mogadishu-return`, `/regions/somaliland`, `/regions/puntland`, `/regions/south-central-somalia` | **Live** |
-| 3 | Al-Shabaab 2025–2026 offensive content | `/moj-country-guidance`, `/guides/al-shabaab-asylum-guide`, `/asylum-profiles/al-shabaab-targeting`, `/regions/south-central-somalia` | **Live** — extend GEO blocks in `data/profile-geo.ts` |
-| 4 | ATMIS withdrawal analysis | `/moj-country-guidance`, `/glossary#atmis`, `/cpin-country-guidance` | Partial — glossary term live; deepen MOJ update columns |
-| 5 | Clan minority vulnerability analysis | `/asylum-profiles/clan-minority-groups`, `/case-types/clan-minority-asylum`, `/guides/clan-structure-somalia-guide` | **Live** — GEO highlight block in `data/profile-geo.ts` |
+| 1 | South Asia asylum pillar — comprehensive solicitor guide | `/south-asia-asylum-explained` | **Live** — Article schema, country statistics table |
+| 2 | Country structure — Bangladesh, India, Sri Lanka, Nepal, Bhutan | `/countries`, `/countries/{slug}` | **Live** — full FAQ sections on country pages |
+| 3 | Post-August 2024 Bangladesh transition content | `/guides/bangladesh-asylum-2024-guide`, `/countries/bangladesh`, `/services#bangladesh-post-2024` | **Live** — GEO blocks in `data/profile-geo.ts` |
+| 4 | KK [2021] Sri Lanka framework analysis | `/guides/sri-lanka-kk-guide`, `/countries/sri-lanka`, `/asylum-profiles/diaspora-activity-risk-on-return` | **Live** |
+| 5 | Expert evidence without country guidance (Bangladesh, India, Nepal, Bhutan) | `/south-asia-asylum-explained`, `/cpin-country-guidance` | **Live** — CPIN gap analysis |
 
 ---
 
 ## 3. Content Clusters
 
-Five topical hubs drive internal linking, anchor text, and content depth. Hub 1 (MOJ Framework) and `/cpin-country-guidance` connect all profile, region, and case-type spokes.
+Five topical hubs drive internal linking, anchor text, and content depth. Hub 1 (South Asia Asylum Explained) and `/cpin-country-guidance` connect all profile, country, and case-type spokes.
 
 ```mermaid
 flowchart TB
-  MOJ["/moj-country-guidance Pillar"]
+  Pillar["/south-asia-asylum-explained Pillar"]
   CPIN["/cpin-country-guidance"]
-  Hub1["Hub1 MOJ Framework"]
-  Hub2["Hub2 Al-Shabaab"]
-  Hub3["Hub3 Clan Analysis"]
-  Hub4["Hub4 FGM/GBV"]
-  Hub5["Hub5 Regional Analysis"]
+  Hub1["Hub1 Bangladesh Post-2024"]
+  Hub2["Hub2 India Minorities"]
+  Hub3["Hub3 Sri Lanka Tamil/KK"]
+  Hub4["Hub4 Caste & Nepal/Bhutan"]
+  Hub5["Hub5 Return & Deportation"]
   Instruct["/how-to-instruct"]
-  MOJ --> Hub1
-  MOJ --> Hub2
+  Pillar --> Hub1
+  Pillar --> Hub2
   CPIN --> Hub1
+  CPIN --> Hub3
   Hub1 --> Instruct
   Hub2 --> Instruct
   Hub3 --> Instruct
@@ -121,113 +120,105 @@ flowchart TB
 
 ### Brief slug → canonical slug mapping
 
-Document shorthand URLs from briefs; canonical routes are what the codebase serves.
-
 | Brief / shorthand | Canonical route |
 |-------------------|-----------------|
-| `/asylum-profiles/failed-asylum-seekers` | `/asylum-profiles/failed-asylum-seekers-return` |
-| `/asylum-profiles/diaspora-no-clan` | `/asylum-profiles/diaspora-without-clan-support` |
-| `/asylum-profiles/forced-recruitment` | `/asylum-profiles/forced-recruitment-conscription` |
-| `/asylum-profiles/fgm-gbv` | `/asylum-profiles/fgm-gender-based-violence` |
-| `/guides/clan-structure-guide` | `/guides/clan-structure-somalia-guide` |
-| `/case-types/fgm-somalia` | `/case-types/fgm-somalia-asylum` |
-| `/glossary#moj` | `/glossary#moj-and-others-2014` |
+| `/regions` | `/countries` |
+| `/regions/bangladesh` | `/countries/bangladesh` |
+| `/moj-country-guidance` | `/south-asia-asylum-explained` |
+| `/what-is-a-somalia-expert-witness` | `/what-is-a-south-asia-expert-witness` |
+| `/faq` | `/countries` (FAQs on country pages) |
+| `/fees` | `/how-to-instruct` |
+| `/experts` | `/qualifications` |
 
-### Hub 1: MOJ Framework
+### Hub 1: Bangladesh Post-2024
 
 | Role | URL |
 |------|-----|
-| Pillar | `/moj-country-guidance` |
-| Guide | `/guides/moj-framework-guide` |
+| Pillar | `/south-asia-asylum-explained` |
+| Guide | `/guides/bangladesh-asylum-2024-guide` |
+| Profile | `/asylum-profiles/political-persecution-south-asia` |
+| Profile | `/asylum-profiles/journalists-human-rights-defenders` |
+| Country | `/countries/bangladesh` |
+| Service | `/services#bangladesh-post-2024` |
+| Glossary | `/glossary#bnp`, `/glossary#awami-league` |
+
+### Hub 2: India Minorities
+
+| Role | URL |
+|------|-----|
+| Profile | `/asylum-profiles/religious-minority-persecution` |
+| Profile | `/asylum-profiles/lgbtq-south-asia` |
+| Guide | `/guides/india-asylum-guide` |
+| Country | `/countries/india` |
+| Case type | `/case-types/india-minority-claims` |
+| Glossary | `/glossary#hindutva`, `/glossary#rss`, `/glossary#caa` |
+
+### Hub 3: Sri Lanka Tamil / KK
+
+| Role | URL |
+|------|-----|
+| Profile | `/asylum-profiles/diaspora-activity-risk-on-return` |
+| Guide | `/guides/sri-lanka-kk-guide` |
+| Country | `/countries/sri-lanka` |
+| Case type | `/case-types/sri-lanka-tamil-claims` |
+| Glossary | `/glossary#kk-and-others-2021`, `/glossary#ltte` |
+
+### Hub 4: Caste & Nepal/Bhutan
+
+| Role | URL |
+|------|-----|
+| Profile | `/asylum-profiles/caste-discrimination` |
+| Guide | `/guides/nepal-bhutan-expert-guide` |
+| Country | `/countries/nepal`, `/countries/bhutan` |
+| Glossary | `/glossary#caste`, `/glossary#dalit`, `/glossary#lhotshampa` |
+
+### Hub 5: Return & Deportation
+
+| Role | URL |
+|------|-----|
 | Profile | `/asylum-profiles/failed-asylum-seekers-return` |
-| Profile | `/asylum-profiles/diaspora-without-clan-support` |
-| Region | `/regions/mogadishu-return` |
-| Glossary | `/glossary#moj-and-others-2014` |
-
-### Hub 2: Al-Shabaab
-
-| Role | URL |
-|------|-----|
-| Profile | `/asylum-profiles/al-shabaab-targeting` |
-| Profile | `/asylum-profiles/forced-recruitment-conscription` |
-| Guide | `/guides/al-shabaab-asylum-guide` |
-| Region | `/regions/south-central-somalia` |
-| MOJ section | `/moj-country-guidance` (Al-Shabaab findings) |
-| Case type | `/case-types/article-15c-south-central` |
-
-### Hub 3: Clan Analysis
-
-| Role | URL |
-|------|-----|
-| Profile | `/asylum-profiles/clan-minority-groups` |
-| Guide | `/guides/clan-structure-somalia-guide` |
-| Case type | `/case-types/clan-minority-asylum` |
-| Glossary | `/glossary#clan`, `/glossary#benadiri`, `/glossary#gaboye-madhiban`, `/glossary#gosha`, `/glossary#bantu` |
-| Regions | `/regions/mogadishu-return`, `/regions/somaliland`, `/regions/puntland`, `/regions/south-central-somalia` |
-
-### Hub 4: FGM/GBV
-
-| Role | URL |
-|------|-----|
-| Profile | `/asylum-profiles/fgm-gender-based-violence` |
-| Profile | `/asylum-profiles/women-discriminatory-practices` |
-| Guide | `/guides/fgm-somalia-guide` |
-| Case type | `/case-types/fgm-somalia-asylum` |
-| Glossary | `/glossary#fgm`, `/glossary#amm-and-others-2011` |
-
-### Hub 5: Regional Analysis
-
-| Role | URL |
-|------|-----|
-| Hub | `/regions` |
-| Region | `/regions/somaliland` |
-| Region | `/regions/puntland` |
-| Region | `/regions/mogadishu-return` |
-| Region | `/regions/south-central-somalia` |
-| Guide | `/guides/somaliland-puntland-guide` |
-| Case type | `/case-types/somaliland-asylum` |
+| Case type | `/case-types/deportation-return-south-asia` |
+| Guide | `/guides/south-asia-cpin-guide` |
+| CPIN | `/cpin-country-guidance` |
 
 ### Slug inventory
 
 **Asylum profiles (8):**
 
-`clan-minority-groups`, `al-shabaab-targeting`, `fgm-gender-based-violence`, `failed-asylum-seekers-return`, `diaspora-without-clan-support`, `former-government-officials`, `women-discriminatory-practices`, `forced-recruitment-conscription`
+`political-persecution-south-asia`, `religious-minority-persecution`, `lgbtq-south-asia`, `caste-discrimination`, `women-gender-based-violence`, `journalists-human-rights-defenders`, `diaspora-activity-risk-on-return`, `failed-asylum-seekers-return`
 
-**Regions (4):**
+**Countries (5):**
 
-`mogadishu-return`, `somaliland`, `puntland`, `south-central-somalia`
+`bangladesh`, `india`, `sri-lanka`, `nepal`, `bhutan`
 
 **Guides (6):**
 
-`moj-framework-guide`, `clan-structure-somalia-guide`, `al-shabaab-asylum-guide`, `somaliland-puntland-guide`, `fgm-somalia-guide`, `instructing-somalia-expert`
+`bangladesh-asylum-2024-guide`, `india-asylum-guide`, `sri-lanka-kk-guide`, `south-asia-cpin-guide`, `nepal-bhutan-expert-guide`, `instructing-south-asia-expert`
 
 **Case types (8):**
 
-`ftt-asylum-appeal-somalia`, `upper-tribunal-somalia`, `article-15c-south-central`, `deportation-removal-somalia`, `fresh-claims-somalia`, `fgm-somalia-asylum`, `somaliland-asylum`, `clan-minority-asylum`
+`ftt-south-asia-appeal`, `upper-tribunal-south-asia`, `sri-lanka-tamil-claims`, `bangladesh-political-claims`, `india-minority-claims`, `deportation-return-south-asia`, `fresh-claims-south-asia`, `certification-challenge`
 
 **Services (8 IDs):**
 
-`country-condition-reports`, `clan-analysis`, `al-shabaab-risk`, `fgm-reports`, `internal-relocation`, `moj-framework`, `cpin-challenge`, `oral-evidence`
+`bangladesh-reports`, `india-reports`, `sri-lanka-reports`, `nepal-bhutan-reports`, `cpin-challenge`, `internal-relocation`, `bangladesh-post-2024`, `oral-evidence`
 
 ### Glossary anchor ID convention
 
-Glossary terms use `slug` from `data/glossary.ts` as the fragment ID (e.g. `#moj-and-others-2014`, `#atmis`, `#benadiri`).
+Glossary terms use `slug` from `data/glossary.ts` as the fragment ID (e.g. `#kk-and-others-2021`, `#hindutva`, `#bnp`).
 
 **SEO-critical anchor mappings:**
 
 | Cluster reference | Glossary term | Canonical anchor ID |
 |-------------------|---------------|---------------------|
-| `#moj` | MOJ and Others [2014] | `moj-and-others-2014` |
-| `#oa` | OA and Others [2022] | `oa-and-others-2022` |
-| `#amm` | AMM and Others [2011] | `amm-and-others-2011` |
-| `#atmis` | ATMIS | `atmis` |
-| `#al-shabaab` | Al-Shabaab | `al-shabaab` |
-| `#article-15c` | Article 15(c) | `article-15c` |
-| `#clan` | Clan | `clan` |
-| `#benadiri` | Benadiri | `benadiri` |
-| `#fgm` | FGM | `fgm` |
-| `#euaa` | EUAA Country Guidance | `euaa-country-guidance` |
+| `#kk` | KK and Others [2021] | `kk-and-others-2021` |
+| `#hindutva` | Hindutva | `hindutva` |
+| `#bnp` | BNP | `bnp` |
 | `#cpin` | CPIN | `cpin` |
+| `#caste` | Caste | `caste` |
+| `#ltte` | LTTE | `ltte` |
+| `#lhotshampa` | Lhotshampa | `lhotshampa` |
+| `#hj` | HJ (Iran) [2010] | `hj-iran-2010` |
 
 ---
 
@@ -237,38 +228,19 @@ Content structured for AI citation and featured snippets: definition-first, tabl
 
 | # | GEO target | URL | Required extractable artifact | Implementation |
 |---|------------|-----|------------------------------|----------------|
-| 1 | MOJ framework table | `/moj-country-guidance` | Issue / MOJ Finding / 2025-2026 Update table | **Live** — `mojFrameworkTable` in `data/cpin-data.ts` |
-| 2 | Current Somalia CPINs table | `/cpin-country-guidance` | CPIN quick-reference table (title, date, key issue) | **Live** — `currentCpins` in `data/cpin-data.ts` |
-| 3 | Al-Shabaab renewed offensive | `/guides/al-shabaab-asylum-guide`, `/asylum-profiles/al-shabaab-targeting` | Definition-first summary + dated 2025-2026 context | Partial — extend `data/profile-geo.ts` |
-| 4 | ATMIS withdrawal impact | `/moj-country-guidance`, `/glossary#atmis` | Citeable summary paragraph + timeline | Content target — glossary term exists |
-| 5 | Clan minority vulnerability | `/asylum-profiles/clan-minority-groups` | Risk factors table / numbered list | Partial — GEO highlight block exists |
-| 6 | Somalia return risk 2026 | `/regions/mogadishu-return`, `/asylum-profiles/failed-asylum-seekers-return` | Return viability checklist | Content target |
+| 1 | South Asia asylum statistics table | `/south-asia-asylum-explained` | Country / claim volume / profiles / CG status table | **Live** — `countries` data on pillar page |
+| 2 | Current South Asia CPINs table | `/cpin-country-guidance` | CPIN quick-reference table | **Live** — `cpinRows` in `data/cpin-data.ts` |
+| 3 | Post-August 2024 Bangladesh reversal | `/guides/bangladesh-asylum-2024-guide`, `/asylum-profiles/political-persecution-south-asia` | Definition-first summary + dated 2024 context | **Live** — GEO blocks in `data/profile-geo.ts` |
+| 4 | KK [2021] framework summary | `/guides/sri-lanka-kk-guide`, `/countries/sri-lanka` | Citeable summary paragraph + risk factors | **Live** |
+| 5 | Hindutva national reach (India) | `/asylum-profiles/religious-minority-persecution` | Risk factors highlight block | **Live** — GEO block in `data/profile-geo.ts` |
+| 6 | Expert evidence without CG | `/south-asia-asylum-explained`, `/cpin-country-guidance` | Country-by-country CG status checklist | **Live** |
 
 **GEO content rules:**
 
 - Lead with a direct answer paragraph (40–60 words) before depth.
-- Tables use `<table>` with `<caption>` and header row for accessibility and parsing.
+- Tables use `<table>` with header row for accessibility and parsing.
 - Include source citations (OSCOLA-style) where statistics, CPIN positions, or country guidance are cited.
 - Avoid gating key factual content behind accordions only.
-
-**MOJ framework table (GEO #1) — required rows (from `mojFrameworkTable`):**
-
-| Issue | MOJ Finding | 2025-2026 Update |
-|-------|-------------|------------------|
-| Mogadishu return: ordinary civilian | Generally no Article 3 risk for those with no particular profile | Al-Shabaab offensive renewal undermines this in some areas |
-| Clan support in Mogadishu | Essential for viable return: diaspora financial support needed if no clan present | Continues to apply |
-| Al-Shabaab forced recruitment | No real risk for ordinary Mogadishu civilians | Disputed: recruitment pressure outside Mogadishu high |
-| Former government officials | Individual risk beyond general finding | July 2025 CPIN confirms targeting risk |
-| ATMIS withdrawal | Not addressed in MOJ | Reduced AU force presence; security implications for return |
-
-**Current Somalia CPINs table (GEO #2) — required rows (from `currentCpins`):**
-
-| CPIN Topic | Version/Date | Key Issue |
-|-----------|-------------|-----------|
-| Mogadishu: Al-Shabaab & Security | July 2025 | State willing but unable to protect |
-| Humanitarian Situation in Mogadishu | July 2025 | Overcrowding, IDPs, access to services |
-| Women Fearing GBV | Updated | FGM, forced marriage, domestic violence |
-| EUAA Country Guidance | October 2025 | Actors of protection chapter updated |
 
 ---
 
@@ -280,42 +252,17 @@ Content structured for AI citation and featured snippets: definition-first, tabl
 |-----------|-----|---------------------|
 | Electronic Immigration Network (EIN) | [ein.org.uk/experts](https://ein.org.uk/experts) | `/`, `/asylum-profiles/*`, `/qualifications` |
 | ILPA membership directory | ILPA member directory | `/qualifications`, `/guides/*` |
-| Free Movement | [freemovement.org.uk](https://freemovement.org.uk) | `/moj-country-guidance`, `/cpin-country-guidance`, `/guides/*` |
-| UNHCR UK | [unhcr.org/uk](https://www.unhcr.org/uk/) | `/moj-country-guidance`, country-condition content |
-| Refugee Action | [refugee-action.org.uk](https://www.refugee-action.org.uk/) | `/fees`, `/how-to-instruct` (Legal Aid angle) |
-
-**Submission tracking template:**
-
-| Directory | Owner | Submitted | Live URL | Referral sessions/mo |
-|-----------|-------|-----------|----------|----------------------|
-| EIN | | | | |
-| ILPA | | | | |
-| Free Movement | | | | |
-| UNHCR UK | | | | |
-| Refugee Action | | | | |
-
-### Publications (citations / guest content)
-
-| Publication | Focus |
-|-------------|-------|
-| Free Movement | freemovement.org.uk — asylum, country guidance, MOJ framework, CPIN challenges |
-| ILPA | Immigration practitioners, tribunal practice |
-| Legal Action Group (LAG) | Legal aid, tribunal practice |
-| UK Human Rights Blog | Human rights, country conditions |
-
-**Outreach KPI template:**
-
-| Publication | Piece title | Published | Backlink URL | Domain rating |
-|-------------|-------------|-----------|--------------|---------------|
-| | | | | |
+| Free Movement | [freemovement.org.uk](https://freemovement.org.uk) | `/south-asia-asylum-explained`, `/cpin-country-guidance`, `/guides/*` |
+| UNHCR UK | [unhcr.org/uk](https://www.unhcr.org/uk/) | `/south-asia-asylum-explained`, country-condition content |
+| Refugee Action | [refugee-action.org.uk](https://www.refugee-action.org.uk/) | `/how-to-instruct` (Legal Aid angle) |
 
 ### Digital PR angles
 
-1. **MOJ Framework and Somalia Return Risk 2026** — supports `/moj-country-guidance` and GEO #1, #6.
-2. **Al-Shabaab 2025–2026 Offensive and Article 15(c) Claims** — Hub 2, `/asylum-profiles/al-shabaab-targeting`, `/case-types/article-15c-south-central`.
-3. **ATMIS Withdrawal and UK Asylum Implications** — GEO #4, `/glossary#atmis`, `/moj-country-guidance`.
-4. **Clan Minority and Benadiri Vulnerability on Return to Mogadishu** — Hub 3, `/asylum-profiles/clan-minority-groups`.
-5. **Legal Aid Instruction of Somalia Country Experts: A Solicitor's Checklist** — `/guides/instructing-somalia-expert`, `/fees`.
+1. **Post-August 2024 Bangladesh Asylum Landscape** — `/guides/bangladesh-asylum-2024-guide`, `/countries/bangladesh`.
+2. **KK [2021] and Tamil Diaspora Return Risk** — Hub 3, `/asylum-profiles/diaspora-activity-risk-on-return`.
+3. **Hindutva and Internal Relocation in India** — Hub 2, `/asylum-profiles/religious-minority-persecution`.
+4. **Expert Evidence Where No UK Country Guidance Exists** — `/south-asia-asylum-explained`, `/cpin-country-guidance`.
+5. **Legal Aid Instruction of South Asia Country Experts** — `/guides/instructing-south-asia-expert`, `/how-to-instruct`.
 
 ---
 
@@ -323,19 +270,13 @@ Content structured for AI citation and featured snippets: definition-first, tabl
 
 | Task | Implementation | Status |
 |------|----------------|--------|
-| Vercel deployment | Connect repo; production branch deploy. Repo currently has Netlify config (`netlify.toml`) — choose host before go-live | Pending |
-| DNS: apex → www | `middleware.ts` 301 redirect + registrar `www` CNAME to hosting provider | Code ready |
-| `NEXT_PUBLIC_SITE_URL` | `https://www.somaliaexpert.com` in `.env.example`, `lib/constants.ts` | Ready |
-| `GOOGLE_SITE_VERIFICATION` | `metadata.verification.google` in `app/layout.tsx` | Env-dependent |
-| `BING_SITE_VERIFICATION` | `metadata.other` in `app/layout.tsx` | Env-dependent |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Analytics component (consent-gated) | Env-dependent |
-| Optional analytics | `NEXT_PUBLIC_GTM_ID`, `NEXT_PUBLIC_META_PIXEL_ID`, `NEXT_PUBLIC_LINKEDIN_PARTNER_ID`, `NEXT_PUBLIC_HOTJAR_ID` | Env-dependent |
+| Netlify deployment | `netlify.toml`, `netlify/functions/submit-lead.js` | Ready |
+| DNS: apex → www | `middleware.ts` 301 redirect + registrar `www` CNAME | Code ready |
+| `NEXT_PUBLIC_SITE_URL` | `https://www.southasiaexpert.com` in `.env.example`, `lib/constants.ts` | Ready |
 | Lead capture (Google Sheets) | `GOOGLE_SERVICE_ACCOUNT_EMAIL`, `GOOGLE_PRIVATE_KEY`, `GOOGLE_SHEET_ID`, `GOOGLE_SHEET_TAB_NAME` | Env-dependent |
-| Lead webhook | `Lead_notification_url` / `LEAD_NOTIFICATION_URL` | Env-dependent |
 | `html lang="en-GB"` | Root layout `<html lang="en-GB">` | **Done** |
 | `hreflang` | `en-GB`, `en-US`, `x-default` in `alternates.languages` | **Done** |
-| Submit sitemap | GSC + Bing Webmaster — `https://www.somaliaexpert.com/sitemap.xml` | Post-deploy |
-| LinkedIn company page | `SomaliaExpertWitness` → `sameAs` in Organization schema (`lib/constants.ts`) | **Done** |
+| Submit sitemap | GSC + Bing Webmaster — `https://www.southasiaexpert.com/sitemap.xml` | Post-deploy |
 | EIN directory submission | ein.org.uk/experts | Manual post-launch |
 
 **Canonical and robots:**
@@ -348,37 +289,32 @@ Content structured for AI citation and featured snippets: definition-first, tabl
 
 ---
 
-## Appendix A: Full URL Inventory (~46 routes)
+## Appendix A: Full URL Inventory (40 indexable routes)
 
-### Static and hub pages (17)
+### Static and hub pages (13)
 
 | URL | Sitemap priority |
 |-----|------------------|
 | `/` | 1.0 |
-| `/moj-country-guidance` | 0.95 |
+| `/south-asia-asylum-explained` | 0.95 |
+| `/countries` | 0.95 |
 | `/asylum-profiles` | 0.93 |
-| `/regions` | 0.93 |
 | `/cpin-country-guidance` | 0.90 |
 | `/services` | 0.90 |
-| `/what-is-a-somalia-expert-witness` | 0.90 |
+| `/what-is-a-south-asia-expert-witness` | 0.90 |
 | `/case-types` | 0.88 |
 | `/how-to-instruct` | 0.88 |
 | `/qualifications` | 0.88 |
 | `/guides` | 0.87 |
-| `/fees` | 0.87 |
-| `/faq` | 0.87 |
 | `/glossary` | 0.75 |
-| `/experts` | 0.75 |
 | `/cookie-policy` | 0.50 |
-| `/contact` | 0.6 (excluded from sitemap) |
-| `/thank-you` | noindex |
 
-### Dynamic pages (26)
+### Dynamic pages (27)
 
 | Pattern | Count | Sitemap priority |
 |---------|-------|------------------|
 | `/asylum-profiles/{slug}` | 8 | 0.92 |
-| `/regions/{slug}` | 4 | 0.92 |
+| `/countries/{slug}` | 5 | 0.90–0.94 (Bangladesh/India 0.94, Sri Lanka 0.93, Nepal 0.92, Bhutan 0.90) |
 | `/case-types/{slug}` | 8 | 0.88 |
 | `/guides/{slug}` | 6 | 0.82 |
 
@@ -389,8 +325,11 @@ Content structured for AI citation and featured snippets: definition-first, tabl
 | `/privacy` | noindex, follow |
 | `/terms` | noindex, follow |
 | `/thank-you` | noindex, nofollow |
+| `/contact` | excluded from sitemap |
 
-**Total indexable URLs:** ~46 (excluding `/contact`, `/thank-you`, `/privacy`, `/terms`).
+**Total indexable URLs:** 40.
+
+**Removed routes (301 redirects):** `/faq` → `/countries`, `/fees` → `/how-to-instruct`, `/experts` → `/qualifications`.
 
 ---
 
@@ -399,15 +338,19 @@ Content structured for AI citation and featured snippets: definition-first, tabl
 | Route family | Priority |
 |--------------|----------|
 | `/` | 1.0 |
-| `/moj-country-guidance` | 0.95 |
-| `/asylum-profiles` (hub), `/regions` (hub) | 0.93 |
-| `/asylum-profiles/[slug]`, `/regions/[slug]` | 0.92 |
-| `/cpin-country-guidance`, `/services`, `/what-is-a-somalia-expert-witness` | 0.90 |
+| `/south-asia-asylum-explained`, `/countries` (hub) | 0.95 |
+| `/countries/bangladesh`, `/countries/india` | 0.94 |
+| `/countries/sri-lanka` | 0.93 |
+| `/asylum-profiles` (hub) | 0.93 |
+| `/asylum-profiles/[slug]` | 0.92 |
+| `/countries/nepal` | 0.92 |
+| `/cpin-country-guidance`, `/services`, `/what-is-a-south-asia-expert-witness` | 0.90 |
+| `/countries/bhutan` | 0.90 |
 | `/case-types` (hub), `/case-types/[slug]` | 0.88 |
 | `/how-to-instruct`, `/qualifications` | 0.88 |
-| `/fees`, `/faq`, `/guides` (hub) | 0.87 |
+| `/guides` (hub) | 0.87 |
 | `/guides/[slug]` | 0.82 |
-| `/glossary`, `/experts` | 0.75 |
+| `/glossary` | 0.75 |
 | `/cookie-policy` | 0.50 |
 
 ---
@@ -416,27 +359,28 @@ Content structured for AI citation and featured snippets: definition-first, tabl
 
 ### Rule A — Every `/asylum-profiles/[slug]` must link to:
 
-- `/moj-country-guidance` or `/cpin-country-guidance` (relevant section)
+- `/south-asia-asylum-explained` or `/cpin-country-guidance` (relevant section)
 - Relevant `/case-types/[slug]` page(s)
 - Relevant `/guides/[slug]` page(s)
-- Relevant `/regions/[slug]` page(s) where applicable
+- Relevant `/countries/[slug]` page(s) where applicable
 - `/how-to-instruct`
 - `/contact`
 
 ### Rule B — Every `/guides/[slug]` must link to:
 
 - Relevant `/asylum-profiles/[slug]` page(s)
-- `/moj-country-guidance` or `/cpin-country-guidance`
+- `/south-asia-asylum-explained` or `/cpin-country-guidance`
 - `/how-to-instruct`
 - `/contact`
 
 ### Additional recommended rules
 
-#### Every `/regions/[slug]` must link to:
+#### Every `/countries/[slug]` must link to:
 
-- `/moj-country-guidance` or relevant guide
+- `/countries` hub
 - Relevant `/asylum-profiles/[slug]` page(s)
-- Relevant `/case-types/[slug]` page(s)
+- Relevant `/guides/[slug]` or `/case-types/[slug]` where applicable
+- `/cpin-country-guidance`
 - `/how-to-instruct`
 - `/contact`
 
@@ -446,19 +390,20 @@ Content structured for AI citation and featured snippets: definition-first, tabl
 - `/how-to-instruct`
 - `/contact`
 
-#### `/moj-country-guidance` must link to:
+#### `/south-asia-asylum-explained` must link to:
 
-- All 8 `/asylum-profiles/[slug]` pages
-- All 6 `/guides/[slug]` pages
-- All 4 `/regions/[slug]` pages
+- All 5 `/countries/[slug]` pages (via statistics table + RelatedLinks)
+- `/cpin-country-guidance`
+- `/asylum-profiles` hub
+- `/guides` hub
 - `/how-to-instruct`
 - `/contact`
 
 #### Homepage must link to:
 
-- Top transactional profiles: clan minority, Al-Shabaab, FGM, failed asylum seekers
-- `/moj-country-guidance`
-- `/regions` hub
+- Top transactional profiles: political persecution, religious minority, LGBTQ+, failed asylum seekers
+- `/south-asia-asylum-explained`
+- `/countries` hub
 - `/asylum-profiles` hub
 - `/guides` hub
 - `/how-to-instruct`
@@ -467,29 +412,29 @@ Content structured for AI citation and featured snippets: definition-first, tabl
 #### Glossary terms must link to:
 
 - Most relevant `/asylum-profiles/[slug]`
-- Most relevant `/guides/[slug]`
-- `/moj-country-guidance` or `/cpin-country-guidance` where applicable
+- Most relevant `/guides/[slug]` or `/countries/[slug]`
+- `/south-asia-asylum-explained` or `/cpin-country-guidance` where applicable
 
 ### Enforcement
 
-Implemented via `data/related-links.ts` and the shared `RelatedLinks` component. Breadcrumbs on all non-home pages via `PageShell`.
+Implemented via `data/related-links.ts`, `lib/glossary-links.ts`, and the shared `RelatedLinks` component. Matrices enforced in `scripts/verify-seo.ts`. Breadcrumbs on all non-home pages via `PageShell`.
 
 ---
 
 ## Appendix D: Profile Minimum Links Matrix
 
-Minimum internal links per Rule A. Implement via `relatedLinks` in `data/related-links.ts` or page template.
+Minimum internal links per Rule A. Implement via `getProfileRelatedLinks()` in `data/related-links.ts`.
 
-| Profile slug | MOJ/CPIN | Case types | Guides | Regions |
-|--------------|----------|------------|--------|---------|
-| `clan-minority-groups` | `/moj-country-guidance` | `clan-minority-asylum` | `clan-structure-somalia-guide` | `mogadishu-return` |
-| `al-shabaab-targeting` | `/cpin-country-guidance` | `article-15c-south-central` | `al-shabaab-asylum-guide` | `south-central-somalia` |
-| `fgm-gender-based-violence` | — | `fgm-somalia-asylum` | `fgm-somalia-guide` | — |
-| `failed-asylum-seekers-return` | `/moj-country-guidance` | `deportation-removal-somalia` | — | `mogadishu-return` |
-| `diaspora-without-clan-support` | — | — | `moj-framework-guide` | `mogadishu-return` |
-| `former-government-officials` | `/cpin-country-guidance` | — | `al-shabaab-asylum-guide` | `mogadishu-return` |
-| `women-discriminatory-practices` | — | `fgm-somalia-asylum` | `fgm-somalia-guide` | — |
-| `forced-recruitment-conscription` | `/moj-country-guidance` | `article-15c-south-central` | `al-shabaab-asylum-guide` | `south-central-somalia` |
+| Profile slug | Pillar/CPIN | Case types | Guides | Countries |
+|--------------|-------------|------------|--------|-----------|
+| `political-persecution-south-asia` | `/south-asia-asylum-explained` | `bangladesh-political-claims` | `bangladesh-asylum-2024-guide` | `bangladesh` |
+| `religious-minority-persecution` | `/cpin-country-guidance` | `india-minority-claims` | `india-asylum-guide` | `india` |
+| `lgbtq-south-asia` | `/cpin-country-guidance` | `india-minority-claims` | `india-asylum-guide` | `bangladesh` |
+| `caste-discrimination` | `/cpin-country-guidance` | `india-minority-claims` | `nepal-bhutan-expert-guide` | `india` |
+| `women-gender-based-violence` | `/south-asia-asylum-explained` | `ftt-south-asia-appeal` | — | `bangladesh` |
+| `journalists-human-rights-defenders` | `/cpin-country-guidance` | `bangladesh-political-claims` | `bangladesh-asylum-2024-guide` | `bangladesh` |
+| `diaspora-activity-risk-on-return` | `/south-asia-asylum-explained` | `sri-lanka-tamil-claims` | `sri-lanka-kk-guide` | `sri-lanka` |
+| `failed-asylum-seekers-return` | `/cpin-country-guidance` | `deportation-return-south-asia` | `south-asia-cpin-guide` | — |
 
 **All asylum profile pages:** `/how-to-instruct`, `/contact`
 
@@ -497,12 +442,12 @@ Minimum internal links per Rule A. Implement via `relatedLinks` in `data/related
 
 | Guide slug | Required profile links |
 |------------|------------------------|
-| `moj-framework-guide` | `failed-asylum-seekers-return`, `diaspora-without-clan-support` |
-| `clan-structure-somalia-guide` | `clan-minority-groups` |
-| `al-shabaab-asylum-guide` | `al-shabaab-targeting`, `forced-recruitment-conscription` |
-| `somaliland-puntland-guide` | — (links to regions) |
-| `fgm-somalia-guide` | `fgm-gender-based-violence`, `women-discriminatory-practices` |
-| `instructing-somalia-expert` | Top 4 transactional profiles |
+| `bangladesh-asylum-2024-guide` | `political-persecution-south-asia` |
+| `india-asylum-guide` | `religious-minority-persecution` |
+| `sri-lanka-kk-guide` | `diaspora-activity-risk-on-return` |
+| `south-asia-cpin-guide` | — (links to CPIN hub and countries) |
+| `nepal-bhutan-expert-guide` | `caste-discrimination` |
+| `instructing-south-asia-expert` | Top 4 transactional profiles |
 
 ---
 
@@ -513,27 +458,8 @@ Minimum internal links per Rule A. Implement via `relatedLinks` in `data/related
 ```json
 {
   "@type": "Organization",
-  "@id": "https://www.somaliaexpert.com/#organization"
+  "@id": "https://www.southasiaexpert.com/#organization"
 }
-```
-
-### Schema graph overview
-
-```mermaid
-flowchart TB
-  Org["Organization #organization"]
-  Home["ProfessionalService #professional-service"]
-  Svc["Service x8 /services#id"]
-  ArtMOJ["Article /moj-country-guidance"]
-  ArtGuide["Article x6 /guides/slug"]
-  FAQ["FAQPage dynamic routes"]
-  BC["BreadcrumbList all non-home"]
-  Org --> Home
-  Org --> Svc
-  Org --> ArtMOJ
-  Org --> ArtGuide
-  Org --> FAQ
-  BC --> Org
 ```
 
 ### Children of Organization
@@ -542,9 +468,10 @@ flowchart TB
 |------|-------|-----------|-------|
 | ProfessionalService | 1 | `/` — `#professional-service` | Homepage |
 | Service | 8 | `/services#{id}` | See services inventory in Section 3 |
-| Article | 1 | `/moj-country-guidance` | MOJ pillar |
+| Article | 1 | `/south-asia-asylum-explained` | Pillar page |
+| Article | 1 | `/cpin-country-guidance` | CPIN hub |
 | Article | 6 | `/guides/{slug}` | Guide pages |
-| FAQPage | 24+ | All dynamic routes with FAQs | 2 FAQs minimum per profile/case type/region |
+| FAQPage | 24+ | Dynamic routes with FAQs | Profiles, case types, countries |
 | BreadcrumbList | All non-home | Per-page | |
 | WebSite | 1 | `/` | SearchAction optional |
 
@@ -554,32 +481,28 @@ flowchart TB
 |-------|---------------|
 | `/` | Organization, ProfessionalService |
 | `/services` | Organization, Service ×8 |
-| `/moj-country-guidance` | Organization, Article, BreadcrumbList, FAQPage |
+| `/south-asia-asylum-explained` | Organization, Article, BreadcrumbList |
 | `/cpin-country-guidance` | Organization, Article, BreadcrumbList, FAQPage |
 | `/guides/[slug]` | Organization, Article, BreadcrumbList |
 | `/asylum-profiles/[slug]` | Organization, BreadcrumbList, FAQPage |
-| `/regions/[slug]` | Organization, BreadcrumbList, FAQPage |
+| `/countries/[slug]` | Organization, BreadcrumbList, FAQPage |
 | `/case-types/[slug]` | Organization, BreadcrumbList, FAQPage |
-| `/experts` | Organization |
-| `/faq` | Organization, FAQPage, BreadcrumbList |
 | `/glossary` | Organization, BreadcrumbList |
 | Static utility pages | Organization, BreadcrumbList |
-
-**LinkedIn `sameAs`:** `https://www.linkedin.com/company/SomaliaExpertWitness`
 
 ---
 
 ## Appendix F: Recommended Build Order
 
 1. Root layout (`lang="en-GB"`, hreflang), `createMetadata()`, `JsonLd`, Header/Footer
-2. Data layer: `asylum-profiles.ts`, `regions.ts`, `case-types.ts`, `guides.ts`, `glossary.ts`, `services.ts`, `cpin-data.ts`
-3. Dynamic routes: `/asylum-profiles/[slug]`, `/regions/[slug]`, `/case-types/[slug]`, `/guides/[slug]`
-4. Static pages: `/moj-country-guidance`, `/cpin-country-guidance`, `/services`, `/how-to-instruct`, `/qualifications`, `/fees`, `/faq`, `/glossary`, `/contact`, `/experts`
-5. Homepage with top profile links, MOJ pillar link, regions hub, guides hub
+2. Data layer: `asylum-profiles.ts`, `countries.ts`, `case-types.ts`, `guides.ts`, `glossary.ts`, `services.ts`, `cpin-data.ts`
+3. Dynamic routes: `/asylum-profiles/[slug]`, `/countries/[slug]`, `/case-types/[slug]`, `/guides/[slug]`
+4. Static pages: `/south-asia-asylum-explained`, `/cpin-country-guidance`, `/services`, `/how-to-instruct`, `/qualifications`, `/glossary`, `/contact`
+5. Homepage with top profile links, pillar link, countries hub, guides hub
 6. `RelatedLinks` component + Appendix D matrix
-7. GEO tables on `/moj-country-guidance`, `/cpin-country-guidance`, and profile pages (Section 4)
+7. GEO tables on pillar, CPIN, and profile pages (Section 4)
 8. `public/sitemap.xml`, `public/robots.txt` via `npm run seo:generate`, env verification tags
-9. `middleware.ts` apex → www redirect
+9. `middleware.ts` apex → www redirect + legacy slug redirects
 10. Post-launch: EIN and ILPA directory submissions, GSC/Bing sitemap submit
 
 ---
@@ -588,4 +511,4 @@ flowchart TB
 
 | Version | Date | Notes |
 |---------|------|-------|
-| 1.0 | 2026-06-11 | Initial SEO architecture for somaliaexpert.com (replaces Nigeria template) |
+| 1.0 | 2026-06-11 | Initial SEO architecture for southasiaexpert.com (adapted from Somalia template) |

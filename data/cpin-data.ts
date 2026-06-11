@@ -1,76 +1,23 @@
-export type CpinEntry = {
-  title: string;
-  date: string;
-  keyIssue: string;
+export type CpinRow = {
+  country: string;
+  topics: string;
 };
 
-export const currentCpins: CpinEntry[] = [
-  {
-    title: "Mogadishu: Al-Shabaab & Security",
-    date: "July 2025",
-    keyIssue: "State willing but unable to protect",
-  },
-  {
-    title: "Humanitarian Situation in Mogadishu",
-    date: "July 2025",
-    keyIssue: "Overcrowding, IDPs, access to services",
-  },
-  {
-    title: "Women Fearing GBV",
-    date: "Updated",
-    keyIssue: "FGM, forced marriage, domestic violence",
-  },
-  {
-    title: "EUAA Country Guidance",
-    date: "October 2025",
-    keyIssue: "Actors of protection chapter updated",
-  },
+export const cpinRows: CpinRow[] = [
+  { country: "Bangladesh", topics: "Political parties; Religious minorities; LGBTQ+" },
+  { country: "India", topics: "Sikh separatism; Muslims; LGBTQ+; Caste" },
+  { country: "Sri Lanka", topics: "Tamils; LTTE; Human rights defenders" },
+  { country: "Nepal", topics: "General background" },
+  { country: "Bhutan", topics: "Limited coverage" },
 ];
 
 export const countryGuidanceCases = [
   {
-    citation: "MOJ and Others [2014] UKUT 00442",
-    summary: "Leading country guidance for Mogadishu return. Diaspora/clan support test.",
-  },
-  {
-    citation: "OA and Others [2022] UKUT 00033",
-    summary: "Updated country guidance on return to Somalia.",
-  },
-  {
-    citation: "AMM and Others [2011] UKUT 445",
-    summary: "FGM as persecution in Somalia. Humanitarian crisis and returnees.",
+    citation: "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245",
+    summary:
+      "Leading country guidance on Sri Lanka Tamil asylum claims. Establishes risk profiles including actual or imputed LTTE associations, diaspora activists, and those who have given evidence against the government.",
   },
 ];
 
-export const mojFrameworkTable = [
-  {
-    issue: "Mogadishu return: ordinary civilian",
-    mojFinding: "Generally no Article 3 risk for those with no particular profile",
-    update: "Al-Shabaab offensive renewal undermines this in some areas",
-  },
-  {
-    issue: "Clan support in Mogadishu",
-    mojFinding: "Essential for viable return: diaspora financial support needed if no clan present",
-    update: "Continues to apply",
-  },
-  {
-    issue: "Al-Shabaab forced recruitment",
-    mojFinding: "No real risk for ordinary Mogadishu civilians",
-    update: "Disputed: recruitment pressure outside Mogadishu high",
-  },
-  {
-    issue: "State protection",
-    mojFinding: "Willing but not able to protect",
-    update: "ATMIS withdrawal 2025 creates further capacity gap",
-  },
-  {
-    issue: "Internal relocation to Mogadishu",
-    mojFinding: "Possible for some profiles from other regions",
-    update: "Less viable given renewed Al-Shabaab activity",
-  },
-  {
-    issue: "Somaliland",
-    mojFinding: "Safer than South/Central: separate analysis",
-    update: "Ongoing",
-  },
-];
+export const cpinNote =
+  "For Bangladesh, India, Nepal, and Bhutan, there is no current country guidance from the UK Upper Tribunal. Expert evidence is particularly valuable to supplement CPIN positions and provide profile-specific risk analysis.";

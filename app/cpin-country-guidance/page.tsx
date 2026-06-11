@@ -6,34 +6,35 @@ import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { ResponsiveTableWrap } from "@/components/ui/ResponsiveTableWrap";
 import { createMetadata } from "@/lib/metadata";
 import { articleSchema } from "@/lib/schema";
-import { currentCpins, countryGuidanceCases } from "@/data/cpin-data";
+import { cpinRows, countryGuidanceCases, cpinNote } from "@/data/cpin-data";
 import { guides } from "@/data/guides";
 import { asylumProfiles } from "@/data/asylum-profiles";
 import { HubLinkGrid } from "@/components/ui/HubLinkGrid";
 import { JsonLd } from "@/components/ui/JsonLd";
+import { getCpinRelatedLinks } from "@/data/related-links";
 
 const cpinFaqs = [
   {
     question: "What is a CPIN in UK asylum law?",
     answer:
-      "A Country Policy Information Note (CPIN) is a Home Office document setting out the UK government's position on country conditions for asylum decision-making. CPINs are not binding on immigration tribunals but carry significant weight. Somalia has multiple updated CPINs in 2025 covering Mogadishu security, humanitarian conditions, and gender-based violence.",
+      "A Country Policy Information Note (CPIN) is a Home Office document setting out the UK government's position on country conditions for asylum decision-making. CPINs are not binding on immigration tribunals but carry significant weight. South Asia has CPINs covering Bangladesh, India, Sri Lanka, Nepal, and Bhutan.",
   },
   {
-    question: "Which Somalia CPINs are current in 2025-2026?",
+    question: "Which South Asian countries have UK country guidance?",
     answer:
-      "Key current CPINs include Mogadishu: Al-Shabaab and Security Situation (July 2025), Humanitarian Situation in Mogadishu (July 2025), Women Fearing GBV (updated), and EUAA Country Guidance Somalia (October 2025, actors of protection chapter updated).",
+      "Only Sri Lanka has current UK Upper Tribunal country guidance: KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. Bangladesh, India, Nepal, and Bhutan have no current binding country guidance, making expert evidence especially important for these countries.",
   },
   {
-    question: "Can expert evidence challenge Home Office CPIN findings on Somalia?",
+    question: "Can expert evidence challenge Home Office CPIN findings on South Asia?",
     answer:
-      "Yes. Expert witnesses provide independent analysis beyond CPIN reproduction. Where the CPIN does not reflect the appellant's profile, the expert may challenge findings with field research, UN reports, ACLED data, and profile-specific evidence on clan vulnerability, Al-Shabaab risk, and MOJ framework application.",
+      "Yes. Expert witnesses provide independent analysis beyond CPIN reproduction. Where the CPIN does not reflect the appellant's profile or current conditions (such as post-August 2024 Bangladesh), the expert may challenge findings with field research, UN reports, and profile-specific evidence.",
   },
 ];
 
 export const metadata = createMetadata({
-  title: "Somalia CPIN & Country Guidance 2025-2026 | UK Asylum Solicitor Guide",
+  title: "South Asia CPIN & Country Guidance 2025 | UK Asylum Solicitor Guide",
   description:
-    "Current Home Office CPINs and country guidance on Somalia for UK asylum practitioners: MOJ [2014], OA [2022], AMM [2011], Al-Shabaab, Mogadishu, and EUAA October 2025.",
+    "Current Home Office CPINs and country guidance on South Asia for UK asylum practitioners: Bangladesh, India, Sri Lanka KK [2021], Nepal, Bhutan, and expert evidence gaps.",
   path: "/cpin-country-guidance",
 });
 
@@ -45,82 +46,76 @@ export default function CpinCountryGuidancePage() {
       <PageJsonLd breadcrumbs={crumbs} faqs={cpinFaqs} />
       <JsonLd
         data={articleSchema({
-          title: "Somalia CPIN & Country Guidance 2025-2026: A Guide for UK Asylum Solicitors",
+          title: "South Asia CPIN & Country Guidance 2025: A Guide for UK Asylum Solicitors",
           description:
-            "Current Home Office CPINs and country guidance on Somalia for UK asylum practitioners.",
+            "Current Home Office CPINs and country guidance on South Asia for UK asylum practitioners.",
           path: "/cpin-country-guidance",
         })}
       />
       <PageShell
-        title="Somalia CPIN & Country Guidance 2025-2026: A Guide for UK Asylum Solicitors"
+        title="South Asia CPIN & Country Guidance 2025: A Guide for UK Asylum Solicitors"
         subtitle="Current Home Office CPINs, country guidance cases, and the expert witness role beyond generic country policy."
         breadcrumbs={crumbs}
       >
         <p className="text-[#374151] leading-relaxed">
-          Somalia is one of the most legally complex asylum jurisdictions in the UK system. Multiple layers of country
-          guidance (MOJ [2014], OA [2022], AMM [2011]), updated CPINs, and rapidly evolving security conditions make
-          current expert knowledge essential for both solicitors and expert witnesses.
+          South Asia is the second most significant asylum claim region in the UK after Sub-Saharan Africa. Multiple
+          CPINs cover Bangladesh, India, Sri Lanka, Nepal, and Bhutan, but only Sri Lanka has binding UK Upper Tribunal
+          country guidance. Expert evidence is essential to fill gaps in CPIN coverage and address rapidly changing
+          conditions, particularly post-August 2024 Bangladesh.
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">Current Somalia CPINs</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Current South Asia CPINs</h2>
         <div className="mt-4">
           <ResponsiveTableWrap>
-            <table className="w-full min-w-[600px] border-collapse text-sm">
-              <caption className="mb-3 text-left text-base font-semibold text-[#0B2D4E]">
-                Somalia CPIN quick reference for UK asylum practitioners (2025-2026)
+            <table className="w-full min-w-[500px] border-collapse text-sm">
+              <caption className="mb-3 text-left text-base font-semibold text-[#3D1A1A]">
+                South Asia CPIN quick reference for UK asylum practitioners (2025)
               </caption>
               <thead>
-                <tr className="border-b border-[#C8D8E4] bg-[#F4F8FB]">
-                  <th className="px-4 py-3 text-left font-semibold text-[#0B2D4E]">CPIN</th>
-                  <th className="px-4 py-3 text-left font-semibold text-[#0B2D4E]">Date</th>
-                  <th className="px-4 py-3 text-left font-semibold text-[#0B2D4E]">Key Issue</th>
+                <tr className="border-b border-[#E8D0C0] bg-[#FDF5F0]">
+                  <th className="px-4 py-3 text-left font-semibold text-[#3D1A1A]">Country</th>
+                  <th className="px-4 py-3 text-left font-semibold text-[#3D1A1A]">CPIN Topics Available</th>
                 </tr>
               </thead>
               <tbody>
-                {currentCpins.map((row) => (
-                  <tr key={row.title} className="border-b border-[#C8D8E4]">
-                    <td className="px-4 py-3 text-[#374151]">{row.title}</td>
-                    <td className="px-4 py-3 text-[#374151]">{row.date}</td>
-                    <td className="px-4 py-3 text-[#374151]">{row.keyIssue}</td>
+                {cpinRows.map((row) => (
+                  <tr key={row.country} className="border-b border-[#E8D0C0]">
+                    <td className="px-4 py-3 font-medium text-[#374151]">{row.country}</td>
+                    <td className="px-4 py-3 text-[#374151]">{row.topics}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </ResponsiveTableWrap>
         </div>
+        <p className="mt-4 text-sm text-[#374151] italic">{cpinNote}</p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">Country Guidance Cases</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Country Guidance Cases</h2>
         <ul className="mt-4 space-y-4">
           {countryGuidanceCases.map((cg) => (
-            <li key={cg.citation} className="rounded-[8px] border border-[#C8D8E4] bg-[#F4F8FB] p-4">
-              <p className="font-semibold text-[#0B2D4E]">{cg.citation}</p>
+            <li key={cg.citation} className="rounded-[8px] border border-[#E8D0C0] bg-[#FDF5F0] p-4">
+              <p className="font-semibold text-[#3D1A1A]">{cg.citation}</p>
               <p className="mt-1 text-sm text-[#374151]">{cg.summary}</p>
             </li>
           ))}
         </ul>
         <p className="mt-4 text-[#374151]">
-          For a detailed analysis of MOJ [2014], see our{" "}
-          <Link href="/moj-country-guidance" className="font-semibold text-[#C8922A] hover:underline">
-            MOJ country guidance pillar page
+          For a detailed analysis of South Asian asylum claims, see our{" "}
+          <Link href="/south-asia-asylum-explained" className="font-semibold text-[#E8751A] hover:underline">
+            South Asia asylum explained pillar page
           </Link>
           .
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">July 2025 Mogadishu Security CPIN</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Post-August 2024 Bangladesh CPIN Gap</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
-          The July 2025 CPIN on Mogadishu: Al-Shabaab and Security Situation confirms that the Federal Government of
-          Somalia is willing but unable to provide effective protection from Al-Shabaab. Car bomb attacks and
-          assassinations remain common. This CPIN is central to MOJ framework analysis and Al-Shabaab targeting claims.
+          The August 2024 fall of Sheikh Hasina&apos;s government has materially changed Bangladesh country conditions.
+          Existing CPINs on political parties may not reflect post-transition dynamics where Awami League supporters now
+          face risk and BNP supporters may have changed country conditions arguments. Expert witnesses provide current
+          analysis beyond CPIN publication dates.
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">EUAA Country Guidance October 2025</h2>
-        <p className="mt-4 text-[#374151] leading-relaxed">
-          The EUAA updated its Country Guidance on Somalia in October 2025, revising the actors of protection chapter.
-          UK tribunals may consider EUAA guidance alongside Home Office CPINs, particularly on state protection
-          availability and internal relocation viability.
-        </p>
-
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">How Expert Reports Relate to CPINs</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">How Expert Reports Relate to CPINs</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
           Expert witnesses do not simply reproduce CPIN content. The expert&apos;s role is to provide independent,
           objective analysis of whether the appellant&apos;s specific profile creates a real risk, applying current field
@@ -131,7 +126,7 @@ export default function CpinCountryGuidancePage() {
 
         <div className="mt-10 space-y-6">
           <HubLinkGrid
-            title="All Somali Asylum Profiles"
+            title="All South Asian Asylum Profiles"
             links={asylumProfiles.map((p) => ({ label: p.title, href: `/asylum-profiles/${p.slug}` }))}
           />
           <HubLinkGrid
@@ -141,14 +136,7 @@ export default function CpinCountryGuidancePage() {
         </div>
 
         <FAQSection faqs={cpinFaqs} />
-        <RelatedLinks
-          links={[
-            { label: "MOJ Country Guidance", href: "/moj-country-guidance" },
-            { label: "Services", href: "/services" },
-            { label: "How to Instruct", href: "/how-to-instruct" },
-            { label: "Contact Us", href: "/contact" },
-          ]}
-        />
+        <RelatedLinks links={getCpinRelatedLinks()} />
       </PageShell>
     </>
   );

@@ -3,8 +3,8 @@ import { createMetadata } from "@/lib/metadata";
 import { SITE_EMAIL } from "@/lib/constants";
 
 export const metadata = createMetadata({
-  title: "Privacy Policy | SomaliaExpert",
-  description: "Privacy policy for SomaliaExpert.com",
+  title: "Privacy Policy | SouthAsiaExpert",
+  description: "Privacy policy for SouthAsiaExpert.com",
   path: "/privacy",
   noindex: true,
   follow: true,
@@ -14,7 +14,7 @@ export default function PrivacyPage() {
   return (
     <PageShell title="Privacy Policy" breadcrumbs={[{ label: "Home", href: "/" }, { label: "Privacy" }]}>
       <p className="text-[#374151] leading-relaxed">
-        SomaliaExpert.com is operated to connect UK solicitors with qualified Somalia expert witnesses. We collect
+        SouthAsiaExpert.com is operated to connect UK solicitors with qualified South Asia expert witnesses. We collect
         personal data submitted through our contact form (name, law firm, email, phone, and case details) solely to
         respond to instruction requests and match appropriate experts.
       </p>
@@ -22,12 +22,12 @@ export default function PrivacyPage() {
         Contact form submissions are stored securely and retained only as long as necessary to fulfil your request.
         We do not sell personal data. You may request deletion by emailing {SITE_EMAIL}. Non-essential tracking
         scripts load only after you grant consent via our cookie banner. See our{" "}
-        <a href="/cookie-policy" className="font-semibold text-[#C8922A] hover:underline">
+        <a href="/cookie-policy" className="font-semibold text-[#E8751A] hover:underline">
           Cookie Policy
         </a>
         .
       </p>
-      <h2 className="mt-8 text-lg font-bold text-[#0B2D4E]">Your Rights (GDPR)</h2>
+      <h2 className="mt-8 text-lg font-bold text-[#3D1A1A]">Your Rights (GDPR)</h2>
       <p className="mt-4 text-[#374151] leading-relaxed">
         You have the right to access, rectify, erase, restrict processing, and port your personal data. You may
         withdraw consent for non-essential cookies at any time via Cookie Settings in the footer. To exercise your

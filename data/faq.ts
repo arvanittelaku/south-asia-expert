@@ -1,64 +1,76 @@
 import type { FAQ } from "@/lib/schema";
 
-export const siteFaqs: FAQ[] = [
+/** Merge country-specific FAQs with site-wide FAQs (deduplicated by question) */
+export function getCountryPageFaqs(countryFaqs: FAQ[]): FAQ[] {
+  const seen = new Set<string>();
+  const merged: FAQ[] = [];
+  for (const faq of [...countryFaqs, ...faqs]) {
+    if (seen.has(faq.question)) continue;
+    seen.add(faq.question);
+    merged.push(faq);
+  }
+  return merged;
+}
+
+export const faqs: FAQ[] = [
   {
-    question: "What is MOJ and Others [2014]?",
+    question: "What countries does South Asia Expert cover?",
     answer:
-      "MOJ and Others (Return to Mogadishu) Somalia CG [2014] UKUT 004442 (IAC) is the leading country guidance case for Somalia asylum appeals in the UK. It established that generally there is no Article 3 risk for ordinary civilians returning to Mogadishu, but that clan support or diaspora remittances are essential for viable return. Without either, return may breach Article 3.",
+      "SouthAsiaExpert covers Bangladesh, India, Sri Lanka, Nepal, and Bhutan. Pakistan is covered separately at pakistancountryexpert.com. We provide country condition reports and expert witness evidence for asylum appeals and immigration tribunal proceedings involving nationals of these five South Asian countries.",
   },
   {
-    question: "How has the security situation changed in 2025-2026?",
+    question: "What happened in Bangladesh in August 2024?",
     answer:
-      "Al-Shabaab's renewed offensive through late 2025 into early 2026 has retaken territory previously considered liberated in south and central Somalia. ATMIS withdrawal has created an additional security vacuum. The July 2025 CPINs confirm the Federal Government is willing but unable to protect citizens from Al-Shabaab. These developments significantly affect MOJ framework application and Article 15(c) analysis.",
+      "In August 2024, mass student protests led to the fall of Sheikh Hasina's Awami League government. Hasina fled to India, fundamentally altering the asylum landscape for Bangladesh. Former BNP and Jamaat supporters who were persecuted under Hasina may now face changed country conditions, while Awami League supporters face new risks. Expert evidence on post-August 2024 conditions is essential.",
   },
   {
-    question: "What is the clan minority vulnerability in Somalia?",
+    question: "What is the KK country guidance on Sri Lanka?",
     answer:
-      "Somalia's social protection system is organised around clan membership. Minority groups including Benadiri, Gosha, Bantu, and Gaboye/Madhiban lack clan militia protection and face severe discrimination, exploitation, and violence without recourse to effective protection from state or non-state actors.",
+      "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245 established that Tamil asylum seekers with certain profiles face real risk on return, particularly those with actual or imputed LTTE associations, high-profile diaspora activists, or those who have given evidence against the Sri Lankan government.",
   },
   {
-    question: "What is the diaspora/remittances test in MOJ?",
+    question: "Is India a safe country for asylum?",
     answer:
-      "MOJ established that return to Mogadishu requires assessment of whether the individual has clan connections providing support or can obtain financial remittances from abroad. Without either, the individual may face destitution and conditions reaching the Article 3 threshold in a city with limited social welfare infrastructure.",
+      "India is not a designated safe third country in UK asylum law and claims must be assessed on their merits. While India has a functioning state and judiciary, state protection is inconsistent for certain minority groups, particularly in states governed by BJP-aligned administrations. Expert witnesses assess the specific profile and viability of internal relocation.",
   },
   {
-    question: "Is Somaliland safer than south Somalia?",
+    question: "Are LGBTQ+ asylum claims from India valid post-decriminalisation?",
     answer:
-      "Somaliland generally has a more stable political environment, functioning government, and lower Al-Shabaab presence than south and central Somalia. However, it is not entirely safe, and specific profiles including clan minorities and political opponents face genuine risks requiring Somaliland-specific expert analysis.",
+      "Yes. India decriminalised same-sex conduct in 2018 (Navtej Singh Johar), but decriminalisation does not eliminate persecution. Family honour violence, community ostracism, and employment discrimination remain serious risks. Expert witnesses apply the HJ (Iran) standard to assess whether openly living as LGBTQ+ would create a real risk.",
   },
   {
-    question: "What changed with the ATMIS withdrawal?",
+    question: "Why is expert evidence especially important in Nepal cases?",
     answer:
-      "The ATMIS (AU Transition Mission in Somalia) withdrawal in 2025-2026 creates additional uncertainty about security capacity. The Federal Government of Somalia cannot protect its own citizens without ATMIS support, clan violence continues, and even majority clan members face danger from generalised insecurity and Al-Shabaab attacks.",
+      "Unlike Somalia, Pakistan, or Sri Lanka, Nepal has no current UK Upper Tribunal country guidance. There are no binding country guidance findings from the UK tribunal on conditions in Nepal. Independent expert evidence is especially valuable as the tribunal must rely on expert analysis rather than country guidance presumptions.",
   },
   {
-    question: "How does Al-Shabaab's 2026 offensive affect claims?",
+    question: "How does the Bangladesh political transition affect existing claims?",
     answer:
-      "Al-Shabaab's renewed offensive has retaken previously liberated territory, making internal relocation to government-controlled areas less viable. This affects MOJ internal relocation analysis, Article 15(c) claims from south/central Somalia, and individual targeting claims where Al-Shabaab's expanded control increases identification and targeting capacity.",
+      "The August 2024 transition may affect both pending and fresh claims. BNP supporters previously persecuted under Hasina may face changed country conditions arguments. Awami League supporters may now have stronger claims. Expert witnesses must assess conditions as of the current date for all Bangladesh political claims.",
   },
   {
-    question: "What is a Somalia expert witness?",
+    question: "How do I instruct a South Asia expert witness?",
     answer:
-      "A Somalia expert witness provides independent country condition reports for UK immigration tribunals. Experts assess clan structure, Al-Shabaab risk, MOJ framework application, FGM prevalence, Mogadishu return viability, and regional conditions in Somaliland and Puntland. Reports comply with CPR Part 35 and Immigration Tribunal Practice Direction paragraph 10.",
+      "Contact us via the instruction form or email. For Legal Aid cases, obtain LAA prior authority before instruction. Provide the AIR, RFRL, witness statement, relevant CPINs, and a detailed letter of instruction. Allow 2 to 4 weeks for a standard report.",
   },
   {
-    question: "How do I instruct a Somalia expert witness?",
+    question: "Are South Asia expert reports Legal Aid compatible?",
     answer:
-      "Submit your case details via our contact form or email. Provide the letter of instruction, appellant witness statement, Home Office refusal letter, and relevant country guidance decisions. Legal Aid cases require LAA prior authority. Standard reports require 14 days; urgent reports can be completed within 7 days.",
+      "Yes. SouthAsiaExpert provides LAA-compatible rates for all major South Asian asylum profiles. Prior authority must be obtained from the Legal Aid Agency before instruction. Include the expert CV, proposed scope, and fee estimate in your prior authority application.",
   },
   {
-    question: "Are Somalia expert reports Legal Aid compatible?",
+    question: "What languages do South Asia experts cover?",
     answer:
-      "Yes. LAA prior authority rates are available for Somalia expert witness reports in First-tier Tribunal and Upper Tribunal proceedings. Confirm prior authority before the expert begins work. We provide fee quotes suitable for LAA prior authority applications.",
+      "Our network includes experts with language expertise in Bengali, Hindi, Tamil, Nepali, Sinhala, and Dzongkha, enabling verification of documents, media sources, and community-specific evidence relevant to each country's asylum claims.",
   },
   {
-    question: "What CPINs are current for Somalia?",
+    question: "How long does a South Asia expert report take?",
     answer:
-      "Current Somalia CPINs include: Mogadishu: Al-Shabaab and Security Situation (July 2025); Humanitarian Situation in Mogadishu (July 2025); Women Fearing GBV (updated); and EUAA Country Guidance Somalia (October 2025, actors of protection chapter updated).",
+      "Standard country condition reports take 2 to 4 weeks. Complex multi-issue reports (political persecution, minority claims with internal relocation) may take 3 to 4 weeks. Urgent reports within 72 hours may be available subject to expert availability.",
   },
   {
-    question: "What qualifications should a Somalia expert hold?",
+    question: "What is the EIN directory and how does it relate to South Asia experts?",
     answer:
-      "Qualified Somalia experts hold academic credentials in African Studies, Political Science, Anthropology, or related disciplines; field research experience in Somalia, Somaliland, and Puntland; Somali language expertise (Somali, Maay, af-Tunni); clan structure knowledge; and prior tribunal acceptance in Somalia cases.",
+      "The Expert Inquiry Network (EIN) directory lists experts covering Bangladesh, Bhutan, India, Myanmar, Nepal, Pakistan, Sri Lanka, and Tibet. SouthAsiaExpert connects UK solicitors with qualified experts from this network for tribunal-ready country condition reports.",
   },
 ];

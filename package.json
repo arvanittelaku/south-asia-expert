@@ -1,5 +1,5 @@
 {
-  "name": "somalia-expert",
+  "name": "south-asia-expert",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,8 @@
     "lint": "eslint",
     "seo:generate": "tsx scripts/generate-seo.ts",
     "seo:verify": "tsx scripts/verify-seo.ts",
-    "test:responsive": "node scripts/test-responsive.mjs"
+    "test:responsive": "node scripts/test-responsive.mjs",
+    "test:sheets": "tsx scripts/test-sheets.ts"
   },
   "dependencies": {
     "googleapis": "^172.0.0",

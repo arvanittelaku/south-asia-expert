@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #0b2d4e;
-  --color-accent: #c8922a;
-  --color-section-alt: #f4f8fb;
-  --color-border: #c8d8e4;
+  --color-primary: #3d1a1a;
+  --color-accent: #e8751a;
+  --color-highlight: #1b5e20;
+  --color-section-alt: #fdf5f0;
+  --color-border: #e8d0c0;
   --color-body: #374151;
   --font-sans: var(--font-inter);
   --radius-card: 8px;

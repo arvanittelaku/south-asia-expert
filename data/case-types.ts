@@ -12,202 +12,162 @@ export type CaseType = {
 
 export const caseTypes: CaseType[] = [
   {
-    slug: "ftt-asylum-appeal-somalia",
-    title: "FTT Asylum Appeal (Somalia)",
-    metaTitle: "Somalia FTT Asylum Appeal Expert Witness UK",
+    slug: "ftt-south-asia-appeal",
+    title: "FTT South Asia Appeal",
+    metaTitle: "FTT South Asia Appeal Expert Witness UK | First-tier Tribunal Reports",
     metaDescription:
-      "Somalia expert witness for First-tier Tribunal asylum appeals. MOJ country guidance, clan analysis, Al-Shabaab risk, and CPR Part 35 compliant country condition reports.",
-    h1: "Somalia FTT Asylum Appeal Expert Witness UK",
+      "South Asia expert witness reports for First-tier Tribunal asylum appeals. Bangladesh, India, Sri Lanka, Nepal, Bhutan country condition reports for FTT proceedings.",
+    h1: "FTT South Asia Appeal Expert Witness UK",
     content: [
-      "First-tier Tribunal asylum appeals involving Somali nationals require expert evidence addressing the appellant's specific profile against current country conditions. Somalia is one of the most legally complex asylum jurisdictions in the UK system, with MOJ country guidance, Article 15(c) analysis for south/central Somalia, and separate frameworks for Somaliland and Puntland.",
-      "Expert reports for FTT proceedings must comply with CPR Part 35 and Immigration Tribunal Practice Direction paragraph 10. Reports address the matters raised in the letter of instruction, cite verifiable sources including July 2025 CPINs and EUAA October 2025 country guidance, and provide independent analysis beyond generic Home Office positions.",
-      "Common FTT issues include clan membership assessment, MOJ diaspora test application, Al-Shabaab targeting risk, FGM and gender-based violence, and internal relocation viability. Expert witnesses with prior tribunal acceptance in Somalia cases provide evidential reliability that strengthens the appellant's case.",
+      "First-tier Tribunal (FTT) asylum appeals from South Asian nationals require country condition reports that address the specific risk profile of the appellant against current conditions in Bangladesh, India, Sri Lanka, Nepal, or Bhutan. Expert reports must comply with Immigration Tribunal Practice Direction paragraph 10 and CPR Part 35.",
+      "South Asian FTT appeals frequently involve challenges to Home Office CPIN positions, internal relocation arguments (particularly in India), and the application of country guidance (KK [2021] for Sri Lanka Tamil claims). Expert witnesses provide independent analysis that goes beyond generic country information.",
+      "Early instruction allows sufficient time for profile-specific research, particularly where post-August 2024 Bangladesh conditions or evolving India Hindutva dynamics require current analysis. Reports should be served in accordance with tribunal directions and hearing timetables.",
     ],
     faqs: [
       {
-        question: "When should a solicitor instruct a Somalia expert for an FTT appeal?",
+        question: "When should I instruct a South Asia expert for an FTT appeal?",
         answer:
-          "Instruct as early as possible once grounds of appeal are filed. Expert reports require time for research, drafting, and review. For listed hearings, allow at least 14 days for standard reports and 7 days for urgent instructions. Legal Aid cases require LAA prior authority before work begins.",
-      },
-      {
-        question: "What should a letter of instruction cover for Somalia FTT cases?",
-        answer:
-          "The letter should set out the appellant's claimed clan, region of origin, specific fear, and the issues in dispute. Identify whether MOJ, Article 15(c), or Somaliland/Puntland analysis applies. Provide the Home Office refusal letter, witness statement, and any prior country guidance decisions relevant to the claim.",
+          "Instruct as early as possible after grounds of appeal are filed. Allow 2 to 4 weeks for a standard country condition report. Urgent reports (within 72 hours) may be available subject to expert availability. Provide the AIR, RFRL, witness statement, and relevant CPINs with the instruction.",
       },
     ],
   },
   {
-    slug: "upper-tribunal-somalia",
-    title: "Upper Tribunal (Somalia)",
-    metaTitle: "Somalia Upper Tribunal Expert Witness UK",
+    slug: "upper-tribunal-south-asia",
+    title: "Upper Tribunal South Asia",
+    metaTitle: "Upper Tribunal South Asia Expert Witness UK | UT Appeal Reports",
     metaDescription:
-      "Somalia expert witness for Upper Tribunal appeals and country guidance cases. Updated analysis for MOJ framework, OA [2022], and 2025-2026 security developments.",
-    h1: "Somalia Upper Tribunal Expert Witness UK",
+      "South Asia expert witness reports for Upper Tribunal appeals. Country guidance analysis, CPIN challenge, and specialist evidence for UT proceedings.",
+    h1: "Upper Tribunal South Asia Expert Witness UK",
     content: [
-      "Upper Tribunal proceedings involving Somali nationals often raise complex questions of country guidance application, including MOJ and Others [2014], OA and Others [2022], and AMM and Others [2011]. Expert evidence at UT level requires particularly rigorous sourcing and analysis given the precedential significance of UT decisions.",
-      "UT cases may challenge existing country guidance in light of changed country conditions, including Al-Shabaab's 2025-2026 offensive, ATMIS withdrawal, and updated CPINs. Expert witnesses must demonstrate that their analysis reflects current conditions and explain any divergence from established country guidance.",
-      "Oral evidence at Upper Tribunal hearings is common in Somalia cases where clan membership, diaspora support, or Al-Shabaab targeting are in dispute. Experts must be prepared to defend their methodology and conclusions under cross-examination.",
+      "Upper Tribunal (UT) appeals from South Asian asylum claims require expert evidence that addresses the legal errors identified in the FTT decision and provides updated country conditions analysis. UT proceedings demand rigorous, well-sourced expert reports with clear methodology.",
+      "For Sri Lanka Tamil claims, UT appeals frequently engage KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. Expert witnesses must assess whether the FTT correctly applied this country guidance to the appellant's specific profile.",
+      "For Bangladesh, India, Nepal, and Bhutan claims where no current UK country guidance exists, UT appeals rely heavily on the quality and independence of expert evidence. Expert witnesses provide analysis that addresses both general country conditions and the individual risk profile.",
     ],
     faqs: [
       {
-        question: "How does expert evidence differ at Upper Tribunal level?",
+        question: "What additional requirements apply to UT expert reports?",
         answer:
-          "UT expert reports require greater methodological rigour and comprehensive sourcing. Experts must address how their analysis relates to existing country guidance and explain any updated assessment based on changed conditions. Oral evidence and cross-examination are more common at UT level.",
-      },
-      {
-        question: "Can expert evidence support a country guidance challenge?",
-        answer:
-          "Yes. Where country conditions have changed materially since existing guidance (such as MOJ [2014]), expert evidence documenting those changes can support applications to modify or depart from country guidance. Al-Shabaab's 2025-2026 offensive and ATMIS withdrawal are relevant developments.",
+          "UT expert reports should address the specific grounds of appeal, cite current country information sources, and provide clear reasoning on risk assessment methodology. Where the FTT erred in applying country guidance or CPIN positions, the expert report should address the correct legal framework.",
       },
     ],
   },
   {
-    slug: "article-15c-south-central",
-    title: "Article 15(c) South/Central Somalia",
-    metaTitle: "Article 15(c) South/Central Somalia Expert Witness UK",
+    slug: "sri-lanka-tamil-claims",
+    title: "Sri Lanka Tamil Claims",
+    metaTitle: "Sri Lanka Tamil Expert Witness UK | KK [2021] Country Guidance Reports",
     metaDescription:
-      "Article 15(c) subsidiary protection expert witness for south and central Somalia. Indiscriminate violence analysis, Al-Shabaab territorial control, and 2025-2026 offensive impact.",
-    h1: "Article 15(c) South/Central Somalia Expert Witness UK",
+      "Sri Lanka Tamil expert witness for UK asylum tribunals. KK [2021] UKUT 00245 framework, LTTE associations, diaspora activism risk, Tamil persecution analysis.",
+    h1: "Sri Lanka Tamil Claims Expert Witness UK",
     content: [
-      "Article 15(c) of the Qualification Directive provides subsidiary protection where a person faces a serious and individual threat by reason of indiscriminate violence in situations of international or internal armed conflict. South and central Somalia outside Mogadishu falls within this framework rather than the MOJ individual risk assessment.",
-      "Al-Shabaab's renewed offensive through late 2025 has retaken territory in lower Juba, Bay, Bakool, Middle Shabelle, and Lower Shabelle, significantly affecting Article 15(c) analysis. Expert witnesses provide current data on civilian casualty rates, territorial control, and the level of indiscriminate violence in the appellant's specific area of origin.",
-      "The tribunal applies a two-stage test: first, whether there is a situation of armed conflict; second, whether the level of indiscriminate violence is such that a civilian would face a real risk. Expert evidence on ACLED data, UN reports, and field conditions supports both stages of this analysis.",
+      "Sri Lanka Tamil asylum claims are governed by KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245, which established that Tamil asylum seekers with certain profiles face real risk on return. Expert witnesses assess the appellant's profile against this country guidance framework.",
+      "Key risk profiles include actual or imputed LTTE associations, high-profile diaspora activists, those who have given evidence against the Sri Lankan government, and individuals whose UK-based Tamil political activities have come to the attention of Sri Lankan intelligence.",
+      "Expert witnesses provide analysis of the appellant's Tamil community profile, political affiliations, diaspora activities, and the current security environment in Sri Lanka for Tamils with similar profiles.",
     ],
     faqs: [
       {
-        question: "When does Article 15(c) apply to Somali claims?",
+        question: "How does KK [2021] affect Sri Lanka Tamil expert evidence?",
         answer:
-          "Article 15(c) applies to claims from south and central Somalia outside Mogadishu where the issue is indiscriminate violence rather than individual targeting. It requires assessment of the level of generalised violence in the appellant's specific area of origin against the Article 15(c) threshold.",
-      },
-      {
-        question: "How has Al-Shabaab's 2025-2026 offensive affected Article 15(c) claims?",
-        answer:
-          "The renewed offensive has retaken previously liberated territory, increasing civilian casualty rates and expanding Al-Shabaab control. This strengthens Article 15(c) arguments for appellants from affected areas and undermines internal relocation to those areas.",
+          "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245 provides the binding country guidance framework for Tamil claims. Expert witnesses must assess the appellant's profile against the risk categories identified in this case, providing analysis of LTTE associations, diaspora activism, and current conditions for Tamils on return.",
       },
     ],
   },
   {
-    slug: "deportation-removal-somalia",
-    title: "Deportation & Removal (Somalia)",
-    metaTitle: "Somalia Deportation & Removal Expert Witness UK",
+    slug: "bangladesh-political-claims",
+    title: "Bangladesh Political Claims",
+    metaTitle: "Bangladesh Political Expert Witness UK | Post-August 2024 BNP/AL Reports",
     metaDescription:
-      "Somalia deportation and removal expert witness. MOJ diaspora test, failed asylum seeker return risk, and Article 3 challenges to removal to Somalia.",
-    h1: "Somalia Deportation & Removal Expert Witness UK",
+      "Bangladesh political persecution expert witness for UK tribunals. Post-August 2024 transition, BNP/Awami League reversal, Jamaat, Hindu minority, expert evidence.",
+    h1: "Bangladesh Political Claims Expert Witness UK",
     content: [
-      "Deportation and removal cases involving Somali nationals require expert evidence on return risk, particularly under the MOJ diaspora test for returns to Mogadishu. The Home Office may assert that return is safe based on MOJ's general finding for ordinary civilians, but expert evidence can demonstrate that the specific individual's profile creates Article 3 risk.",
-      "Failed asylum seekers returned from the UK face distinct risks including destitution without clan support, targeting as Western returnees, and inability to integrate into Mogadishu's clan-based social structure. UNHCR Eligibility Guidelines (2024) caution against generalised return to Somalia.",
-      "Expert reports for removal cases address the appellant's clan connections, remittance networks, personal profile, and current security conditions. Reports may also address whether return to Somaliland or Puntland is viable as an alternative to Mogadishu.",
+      "Bangladesh political asylum claims have been fundamentally reshaped by the August 2024 fall of Sheikh Hasina's Awami League government. Expert witnesses must assess current post-transition conditions rather than relying on pre-2024 country information.",
+      "Former BNP and Jamaat supporters who were genuinely persecuted under the Awami League may now face changed country conditions arguments. Conversely, Awami League supporters and former officials face new risks under the post-transition power structure.",
+      "Expert witnesses provide analysis of the current political landscape, the appellant's party affiliations and visibility, police and judicial complicity, and district-specific risk factors for political persecution in Bangladesh.",
     ],
     faqs: [
       {
-        question: "Can expert evidence prevent removal to Somalia?",
+        question: "Why is post-August 2024 expert evidence essential for Bangladesh political claims?",
         answer:
-          "Expert evidence demonstrating that the specific individual faces Article 3 risk on return can support challenges to removal. This is particularly strong where the appellant lacks clan support in Mogadishu, belongs to a targeted profile, or originates from an area under Al-Shabaab control.",
-      },
-      {
-        question: "What is the Home Office position on Somali returns?",
-        answer:
-          "The Home Office relies on MOJ country guidance and July 2025 CPINs to assert that return to Mogadishu is safe for ordinary civilians with clan support or diaspora remittances. Expert evidence challenges this by demonstrating individual risk factors and current security deterioration.",
+          "The August 2024 political transition has reversed the persecution dynamic for many Bangladesh political claimants. Expert witnesses must assess conditions as of the current date, not under the previous Awami League government. Pre-2024 country information may no longer accurately reflect risk for either BNP or Awami League supporters.",
       },
     ],
   },
   {
-    slug: "fresh-claims-somalia",
-    title: "Fresh Claims (Somalia)",
-    metaTitle: "Somalia Fresh Claim Expert Witness UK",
+    slug: "india-minority-claims",
+    title: "India Minority Claims",
+    metaTitle: "India Minority Expert Witness UK | Muslim, Sikh, Christian & Caste Reports",
     metaDescription:
-      "Somalia fresh claim expert witness for new asylum applications. Changed country conditions, Al-Shabaab offensive 2025-2026, and updated country guidance analysis.",
-    h1: "Somalia Fresh Claim Expert Witness UK",
+      "India minority expert witness for UK asylum tribunals. Hindutva targeting, Muslim persecution, Sikh Khalistan, Christian minorities, caste discrimination, internal relocation.",
+    h1: "India Minority Claims Expert Witness UK",
     content: [
-      "Fresh claims based on changed country conditions in Somalia may rely on Al-Shabaab's 2025-2026 offensive, ATMIS withdrawal, updated CPINs, and EUAA October 2025 country guidance. Expert evidence establishes that conditions have changed materially since the original decision, creating a realistic prospect of success.",
-      "Fresh claims may also arise from new personal circumstances including changed clan dynamics, new Al-Shabaab targeting, or deterioration in the appellant's region of origin. Expert witnesses assess whether the new evidence, viewed with previously assessed evidence, creates a realistic prospect of success.",
-      "The Home Office may accept some fresh claims without referral to the FTT where expert evidence clearly demonstrates changed conditions. Comprehensive expert reports strengthen both Home Office reconsideration requests and subsequent FTT proceedings.",
+      "India minority asylum claims require expert evidence addressing Hindutva and RSS targeting of Muslims, Sikh claims linked to Khalistan associations, Christian minority persecution, caste discrimination against Dalits, and the viability of internal relocation within India.",
+      "The Home Office frequently argues that internal relocation to major cities is available for Indian appellants. Expert witnesses challenge this where the persecutor has national reach (Hindutva networks, RSS) or where relocation would be unduly harsh given the appellant's profile and resources.",
+      "Expert witnesses assess state protection availability in the specific state and region of origin, the nationwide reach of Hindutva organisations, and the cumulative effect of anti-minority rhetoric and violence on the appellant's specific risk profile.",
     ],
     faqs: [
       {
-        question: "What country changes support a Somalia fresh claim?",
+        question: "How do experts challenge internal relocation arguments in India cases?",
         answer:
-          "Al-Shabaab's renewed offensive through late 2025, ATMIS withdrawal creating a security vacuum, updated July 2025 CPINs, and EUAA October 2025 country guidance on actors of protection all represent material changes since many original Somalia decisions were made.",
-      },
-      {
-        question: "How does expert evidence support fresh claim submissions?",
-        answer:
-          "Expert reports document changed country conditions with verifiable sources, explain how changes affect the specific appellant's profile, and demonstrate a realistic prospect of success if the claim were heard afresh. This satisfies the TK (Zimbabwe) test for fresh claims.",
+          "Expert witnesses assess whether the persecutor has national reach (Hindutva networks, RSS), whether the appellant's profile is identifiable nationwide, and whether relocation to a proposed city would be unduly harsh given social networks, economic circumstances, and continuing risk from national-level persecution networks.",
       },
     ],
   },
   {
-    slug: "fgm-somalia-asylum",
-    title: "FGM Asylum (Somalia)",
-    metaTitle: "FGM Somalia Asylum Expert Witness UK",
+    slug: "deportation-return-south-asia",
+    title: "Deportation Return South Asia",
+    metaTitle: "Deportation Return Expert Witness UK | South Asia Risk Assessment",
     metaDescription:
-      "FGM Somalia asylum expert witness. AMM [2011] country guidance, 98% prevalence rates, daughter-at-risk claims, and state protection failure analysis.",
-    h1: "FGM Somalia Asylum Expert Witness UK",
+      "Deportation and return risk expert witness for South Asian failed asylum seekers. Country-specific return risk analysis for Bangladesh, India, Sri Lanka, Nepal, Bhutan.",
+    h1: "Deportation Return South Asia Expert Witness UK",
     content: [
-      "FGM claims from Somalia are governed by AMM and Others [2011] country guidance, which recognised FGM as persecution constituting a serious violation of fundamental rights. With prevalence rates exceeding 98% in some communities, the baseline risk for women and girls from Somalia is exceptionally high.",
-      "Expert witnesses assess the specific ethnic, regional, and family context of the appellant's FGM risk. Daughter-at-risk claims require analysis of whether the appellant has daughters who would face FGM on return, and whether the appellant could protect them. State and community protection is virtually non-existent.",
-      "Internal relocation analysis for FGM claims must address whether relocation within Somalia would reduce FGM risk, considering regional variations in prevalence and enforcement, clan and family pressure, and the appellant's ability to access protection at the relocation destination.",
+      "Deportation and return proceedings for South Asian nationals require expert evidence on the risk the individual would face on return to their country of origin. Return risk depends on the individual's profile, current country conditions, and any material changes since the original asylum decision.",
+      "Post-August 2024 Bangladesh conditions may mean profiles previously assessed as low risk now face genuine persecution. Expert witnesses provide current country condition analysis for individual return risk assessment.",
+      "Expert witnesses address certification challenges, fresh claim support, and judicial review proceedings where return to South Asia would create a real risk of persecution or serious harm for the specific appellant.",
     ],
     faqs: [
       {
-        question: "Is FGM automatically persecution in Somalia cases?",
+        question: "Can expert evidence support a fresh claim after failed South Asian asylum?",
         answer:
-          "AMM [2011] established that FGM in Somalia constitutes persecution. However, the tribunal still assesses the individual appellant's risk based on their specific family, clan, and regional context. Expert evidence addresses the particular circumstances of the appellant's FGM fear.",
-      },
-      {
-        question: "How are daughter-at-risk claims assessed?",
-        answer:
-          "Expert witnesses assess whether the appellant has daughters who would face FGM on return, the family and community pressure to perform FGM, and whether the appellant could realistically protect their daughters given social norms and lack of state protection in Somalia.",
+          "Yes. Where country conditions have changed materially (such as the August 2024 Bangladesh transition) or new evidence has emerged about the appellant's risk profile, expert witnesses can provide country condition analysis supporting a fresh claim under paragraph 353 of the Immigration Rules.",
       },
     ],
   },
   {
-    slug: "somaliland-asylum",
-    title: "Somaliland Asylum",
-    metaTitle: "Somaliland Asylum Expert Witness UK",
+    slug: "fresh-claims-south-asia",
+    title: "Fresh Claims South Asia",
+    metaTitle: "Fresh Claims Expert Witness UK | South Asia Country Conditions",
     metaDescription:
-      "Somaliland asylum expert witness for UK tribunals. Separate legal framework, Isaaq clan dynamics, security analysis, and internal relocation from south Somalia.",
-    h1: "Somaliland Asylum Expert Witness UK",
+      "Fresh claim expert witness for South Asian asylum seekers. Post-2024 Bangladesh conditions, evolving India Hindutva risk, updated country analysis for fresh claims.",
+    h1: "Fresh Claims South Asia Expert Witness UK",
     content: [
-      "Somaliland asylum claims require separate analysis from south and central Somalia. Somaliland has a more stable political environment and lower Al-Shabaab presence, but specific profiles including clan minorities, political opponents, and women face genuine risks that require expert assessment.",
-      "Expert witnesses address Somaliland-specific country conditions including clan dynamics (particularly Isaaq and other Somaliland clans), state protection availability, and the viability of internal relocation to Somaliland from other parts of Somalia. Immigration controls and clan barriers make relocation from south Somalia generally unviable.",
-      "Claims from appellants originating in Somaliland require analysis of regional security, clan protection availability, and individual risk factors. The legal framework differs from MOJ and Article 15(c) analysis applicable to other parts of Somalia.",
+      "Fresh asylum claims from South Asian nationals require evidence that was not and could not reasonably have been provided at the time of the original decision. Expert country condition reports can establish that conditions have changed materially or that new risk factors have emerged.",
+      "The August 2024 Bangladesh political transition is a prime example of materially changed country conditions affecting existing claims. Expert witnesses provide updated analysis addressing the current political landscape and its impact on the appellant's specific profile.",
+      "Fresh claims may also arise from new evidence about the appellant's political affiliations, religious visibility, diaspora activities, or caste status that was not previously documented. Expert witnesses assess how this new information affects the risk assessment.",
     ],
     faqs: [
       {
-        question: "Is Somaliland safer than south Somalia for asylum analysis?",
+        question: "What makes a fresh claim expert report different from an appeal report?",
         answer:
-          "Somaliland is generally more stable with lower Al-Shabaab presence and a functioning government. However, it is not entirely safe, and specific profiles face genuine risks. Expert witnesses provide Somaliland-specific analysis rather than applying generalised Somalia conclusions.",
-      },
-      {
-        question: "Can south Somali appellants relocate to Somaliland?",
-        answer:
-          "Internal relocation to Somaliland from south/central Somalia is generally not viable due to strict immigration controls, essential clan connections, and barriers for those without Isaaq or Somaliland clan backgrounds.",
+          "Fresh claim reports must address what has changed since the original decision: new country conditions, newly discovered risk factors, or evidence that could not reasonably have been provided earlier. The expert must clearly identify the material change and its impact on the appellant's risk profile.",
       },
     ],
   },
   {
-    slug: "clan-minority-asylum",
-    title: "Clan Minority Asylum",
-    metaTitle: "Clan Minority Asylum Expert Witness UK | Somalia",
+    slug: "certification-challenge",
+    title: "Certification Challenge",
+    metaTitle: "Certification Challenge Expert Witness UK | South Asia Asylum Claims",
     metaDescription:
-      "Clan minority asylum expert witness for Somalia. Benadiri, Bantu, Gosha, Gaboye/Madhiban vulnerability, lack of clan protection, and MOJ diaspora test analysis.",
-    h1: "Clan Minority Asylum Expert Witness UK | Somalia",
+      "Certification challenge expert witness for South Asian asylum claims. Challenge clearly unfounded certification with independent country condition analysis.",
+    h1: "Certification Challenge Expert Witness UK | South Asia",
     content: [
-      "Clan minority asylum claims require expert evidence on the specific vulnerability of the appellant's minority group, the absence of clan protection mechanisms, and the interaction with MOJ country guidance where minority clans lack diaspora support networks in Mogadishu.",
-      "Minority groups including Benadiri, Gosha, Bantu, Gaboye/Madhiban, Bajuni, and Galgala face severe discrimination and violence from majority clans without recourse to effective protection. They are particularly vulnerable to Al-Shabaab exploitation and taxation.",
-      "Expert witnesses assess clan membership plausibility, regional distribution of minority groups, protection availability on return, and internal relocation viability. Clan analysis methodology examines dialect, geographic origin, cultural knowledge, and genealogical consistency.",
+      "The Home Office may certify South Asian asylum claims as clearly unfounded under section 94 of the Nationality, Immigration and Asylum Act 2002, removing the right of in-country appeal. Certification is inappropriate where a claim has a realistic prospect of success.",
+      "Expert witnesses help solicitors challenge certification by providing independent country condition analysis demonstrating that the claim has merit. This is particularly important for Bangladesh post-2024 claims, India minority claims, and Nepal claims where no country guidance exists.",
+      "Expert reports for certification challenges should address the specific reasons the Home Office considers the claim unfounded and provide evidence-based analysis of why the appellant's profile creates a realistic prospect of success.",
     ],
     faqs: [
       {
-        question: "How does MOJ apply to clan minority claims?",
+        question: "How quickly can an expert report be prepared for a certification challenge?",
         answer:
-          "MOJ's diaspora test is particularly critical for clan minorities who may lack clan support networks in Mogadishu. Without clan connections or diaspora remittances, return may reach the Article 3 threshold through destitution and vulnerability to exploitation and violence.",
-      },
-      {
-        question: "What evidence supports clan minority vulnerability?",
-        answer:
-          "Expert reports cite UN reports, human rights documentation, field research, and clan structure analysis demonstrating the absence of protection mechanisms for minority groups. Reports address the specific minority group, region, and individual appellant profile.",
+          "Urgent certification challenge reports may be available within 72 hours subject to expert availability. Provide the certification notice, RFRL, witness statement, and any relevant CPINs with the instruction. Early instruction is critical given the shortened appeal window.",
       },
     ],
   },

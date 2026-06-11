@@ -34,7 +34,7 @@ export function organizationSchema() {
   return {
     "@type": "Organization",
     "@id": `${SITE_URL}/#organization`,
-    name: "SomaliaExpert",
+    name: "SouthAsiaExpert",
     url: SITE_URL,
     email: SITE_EMAIL,
     address: { "@type": "PostalAddress", addressCountry: "GB" },
@@ -45,26 +45,26 @@ export function organizationSchema() {
 
 export function professionalServiceSchema() {
   const services = [
-    "Country Condition Reports",
-    "Clan Analysis Reports",
-    "Al-Shabaab Risk Assessment",
-    "FGM Expert Reports",
-    "Internal Relocation Analysis",
-    "MOJ Framework Application",
+    "Bangladesh Country Condition Reports",
+    "India Country Reports",
+    "Sri Lanka Country Reports",
+    "Nepal/Bhutan Country Reports",
     "CPIN Challenge Reports",
+    "Internal Relocation Analysis",
+    "Post-August 2024 Bangladesh Reports",
     "Oral Evidence at Tribunal",
   ];
   return {
     "@type": "ProfessionalService",
     "@id": `${SITE_URL}/#professional-service`,
-    name: "Somalia Expert Witness Services",
+    name: "South Asia Expert Witness Services",
     url: SITE_URL,
-    serviceType: "Somalia Expert Witness",
+    serviceType: "South Asia Expert Witness",
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: "United Kingdom",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Somalia Expert Witness Services",
+      name: "South Asia Expert Witness Services",
       itemListElement: services.map((name) => ({
         "@type": "Offer",
         itemOffered: { "@type": "Service", name },
@@ -85,7 +85,7 @@ export function websiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
-    name: "SomaliaExpert",
+    name: "SouthAsiaExpert",
     url: SITE_URL,
     inLanguage: "en-GB",
     publisher: { "@id": `${SITE_URL}/#organization` },
@@ -106,7 +106,7 @@ export function servicesPageGraph(
       organizationSchema(),
       {
         "@type": "ItemList",
-        name: "Somalia Expert Witness Services",
+        name: "South Asia Expert Witness Services",
         itemListElement: services.map((s, i) => ({
           "@type": "ListItem",
           position: i + 1,
@@ -140,5 +140,21 @@ export function articleSchema({
     url: `${SITE_URL}${path}`,
     inLanguage: "en-GB",
     publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+}
+
+export function personSchema(expert: {
+  name: string;
+  jobTitle: string;
+  description: string;
+  expertise: string[];
+}) {
+  return {
+    "@type": "Person",
+    name: expert.name,
+    jobTitle: expert.jobTitle,
+    description: expert.description,
+    knowsAbout: expert.expertise,
+    worksFor: { "@id": `${SITE_URL}/#organization` },
   };
 }

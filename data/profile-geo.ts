@@ -6,52 +6,68 @@ export type ProfileGeoBlock = {
 
 export function getProfileGeoContent(slug: string): ProfileGeoBlock[] {
   const blocks: Record<string, ProfileGeoBlock[]> = {
-    "clan-minority-groups": [
+    "political-persecution-south-asia": [
       {
         type: "highlight",
-        title: "Clan minority vulnerability (2025-2026)",
+        title: "Bangladesh post-August 2024 reversal",
         content:
-          "Benadiri, Gosha, Bantu, and Gaboye/Madhiban groups lack clan militia protection in Mogadishu and south-central Somalia. On return, they cannot rely on major clan networks for housing, security, or employment. Al-Shabaab's renewed offensive has increased exploitation of minority groups in retaken territories through taxation and forced labour.",
+          "The August 2024 fall of Sheikh Hasina's Awami League government has reversed the persecution dynamic for many Bangladesh political claimants. Expert witnesses must assess current post-transition conditions, not pre-2024 country information.",
       },
     ],
-    "al-shabaab-targeting": [
+    "religious-minority-persecution": [
       {
         type: "highlight",
-        title: "Al-Shabaab renewed offensive (2025-2026)",
+        title: "Hindutva national reach (India)",
         content:
-          "Al-Shabaab (Harakat al-Shabaab al-Mujahideen) operates as a parallel government across large parts of south-central Somalia, targeting government supporters, tax refusers, and those who escape forced recruitment. The July 2025 Home Office CPIN confirms the Federal Government is willing but unable to provide effective protection from Al-Shabaab.",
+          "Hindutva networks and the RSS have national reach in India, challenging internal relocation arguments. Muslim and Christian minority claimants may face risk even in non-BJP governed states due to national-level anti-minority rhetoric and violence.",
       },
     ],
-    "forced-recruitment-conscription": [
+    "lgbtq-south-asia": [
       {
         type: "highlight",
-        title: "Forced recruitment risk",
+        title: "Post-decriminalisation India claims",
         content:
-          "MOJ [2014] held no real risk of Al-Shabaab forced recruitment for ordinary Mogadishu civilians, but this is disputed for areas outside Mogadishu where recruitment pressure remains high. Expert evidence must address current territorial control and the appellant's age, clan profile, and area of origin.",
+          "India decriminalised same-sex conduct in 2018 (Navtej Singh Johar), but social persecution, family honour violence, and employment discrimination continue. Expert witnesses apply the HJ (Iran) standard to assess real risk despite legal decriminalisation.",
       },
     ],
-    "fgm-gender-based-violence": [
+    "diaspora-activity-risk-on-return": [
       {
         type: "highlight",
-        title: "FGM prevalence and state enforcement",
+        title: "Tamil diaspora surveillance (Sri Lanka)",
         content:
-          "Somalia has one of the highest FGM prevalence rates globally (exceeding 98% in some surveys). AMM and Others [2011] established FGM as persecution constituting a serious violation of fundamental rights. State enforcement of prohibitions is virtually non-existent, and daughters of FGM survivors may face a well-founded fear of FGM on return.",
+          "Sri Lankan intelligence services monitor UK-based Tamil political activities. Diaspora demonstrations, fundraising, and leadership roles in Tamil organisations can create or enhance risk profiles for Tamil asylum claimants on return under KK [2021].",
       },
     ],
     "failed-asylum-seekers-return": [
       {
         type: "highlight",
-        title: "Somalia return risk 2026: MOJ diaspora test",
+        title: "Post-2024 Bangladesh return risk",
         content:
-          "Under MOJ, return to Mogadishu requires clan connections providing support or diaspora remittances from abroad. Failed asylum seekers who have lost clan ties through long absence face Article 3 destitution risk. Expert reports should assess remittance viability, cost of living in Mogadishu, and whether financial support alone suffices without clan presence.",
+          "Given the August 2024 political transition, some Bangladesh profiles previously assessed as low risk may now face genuine persecution on return. Expert witnesses provide current country condition analysis for individual return risk assessment.",
       },
     ],
-    "diaspora-without-clan-support": [
+    "caste-discrimination": [
       {
-        type: "note",
-        title: "MOJ diaspora test",
+        type: "highlight",
+        title: "Dalit vulnerability (India and Nepal)",
         content:
-          "MOJ established that diaspora financial remittances can partially substitute for direct clan presence, but expert witnesses must assess whether claimed support is realistic given the appellant's circumstances, the reliability of remittance sources, and Mogadishu living costs in 2025-2026.",
+          "Caste-based persecution claims require expert analysis of the appellant's specific caste status, regional enforcement patterns, and the gap between constitutional protections and practical state protection. Dalit communities face systemic discrimination in both India and Nepal.",
+      },
+    ],
+    "women-gender-based-violence": [
+      {
+        type: "highlight",
+        title: "Acid attacks and honour violence (Bangladesh)",
+        content:
+          "Bangladesh generates significant gender-based violence asylum claims including acid attacks and honour-based violence. Expert witnesses assess district-level enforcement, family and community dynamics, and the practical availability of state protection beyond statutory frameworks.",
+      },
+    ],
+    "journalists-human-rights-defenders": [
+      {
+        type: "highlight",
+        title: "Shrinking civic space (Bangladesh and India)",
+        content:
+          "Journalists and human rights defenders face targeted persecution under sedition, digital security, and anti-terror laws in Bangladesh and India. Expert witnesses assess the appellant's visibility, prior targeting, and whether state protection is available where security forces are complicit.",
       },
     ],
   };

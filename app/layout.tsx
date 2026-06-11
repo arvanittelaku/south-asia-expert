@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      "Somalia Expert Witness UK | Country Reports for Asylum & Immigration Tribunals",
-    template: "%s | SomaliaExpert",
+      "South Asia Expert Witness UK | Bangladesh, India, Sri Lanka & Nepal Asylum Reports",
+    template: "%s | SouthAsiaExpert",
   },
   description:
-    "Find a qualified Somalia expert witness in the UK. Country condition reports for asylum appeals: clan analysis, Al-Shabaab, MOJ country guidance, FGM, Mogadishu return, and Somaliland. Legal Aid compatible.",
+    "Find qualified South Asian country expert witnesses in the UK: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. Country condition reports for asylum appeals and immigration tribunals. Legal Aid compatible.",
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
     other: process.env.BING_SITE_VERIFICATION

@@ -5,9 +5,9 @@ import { createMetadata } from "@/lib/metadata";
 import { glossaryTerms } from "@/data/glossary";
 
 export const metadata = createMetadata({
-  title: "Somalia Expert Witness Glossary | Key Terms for UK Legal Proceedings",
+  title: "South Asia Expert Witness Glossary | Key Terms for UK Legal Proceedings",
   description:
-    "Definitions of key Somalia expert witness and asylum law terms: MOJ, Al-Shabaab, CPIN, clan structure, ATMIS, Article 15(c), FGM, and more.",
+    "Definitions of key South Asia expert witness and asylum law terms: Hindutva, KK [2021], CPIN, BNP, Awami League, caste, LTTE, HJ (Iran), and more.",
   path: "/glossary",
 });
 
@@ -22,8 +22,8 @@ export default function GlossaryPage() {
     <>
       <PageJsonLd breadcrumbs={crumbs} faqs={faqItems} />
       <PageShell
-        title="Somalia Expert Witness & Asylum Law Glossary"
-        subtitle="30 definition-first terms for UK immigration practitioners."
+        title="South Asia Expert Witness & Asylum Law Glossary"
+        subtitle="35 definition-first terms for UK immigration practitioners."
         breadcrumbs={crumbs}
       >
         <GlossarySearch terms={glossaryTerms} />

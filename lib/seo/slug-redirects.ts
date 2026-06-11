@@ -1,12 +1,14 @@
-/** 301 redirects from legacy/brief slugs to canonical SEO-ARCHITECTURE.md routes */
+/** 301 redirects from legacy/brief slugs to canonical routes */
 export const SEO_SLUG_REDIRECTS: Record<string, string> = {
-  "/asylum-profiles/failed-asylum-seekers": "/asylum-profiles/failed-asylum-seekers-return",
-  "/asylum-profiles/diaspora-no-clan": "/asylum-profiles/diaspora-without-clan-support",
-  "/asylum-profiles/forced-recruitment": "/asylum-profiles/forced-recruitment-conscription",
-  "/asylum-profiles/fgm-gbv": "/asylum-profiles/fgm-gender-based-violence",
-  "/guides/clan-structure-guide": "/guides/clan-structure-somalia-guide",
-  "/case-types/fgm-somalia": "/case-types/fgm-somalia-asylum",
+  "/what-is-a-somalia-expert-witness": "/what-is-a-south-asia-expert-witness",
+  "/regions": "/countries",
+  "/regions/bangladesh": "/countries/bangladesh",
+  "/regions/india": "/countries/india",
+  "/regions/sri-lanka": "/countries/sri-lanka",
+  "/regions/nepal": "/countries/nepal",
+  "/regions/bhutan": "/countries/bhutan",
+  "/moj-country-guidance": "/south-asia-asylum-explained",
+  "/faq": "/countries",
   "/fees": "/how-to-instruct",
-  "/faq": "/how-to-instruct",
   "/experts": "/qualifications",
 };

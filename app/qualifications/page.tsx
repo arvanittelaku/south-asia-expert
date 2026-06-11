@@ -3,9 +3,9 @@ import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Somalia Expert Witness Qualifications UK | Credentials & Standards",
+  title: "South Asia Expert Witness Qualifications UK | Credentials & Standards",
   description:
-    "What qualifications should a Somalia expert witness hold? Somali language expertise, field research, clan structure knowledge, UNHCR experience, and tribunal acceptance.",
+    "What qualifications should a South Asia expert witness hold? Bengali, Hindi, Tamil, Nepali language expertise, field research, academic credentials, and tribunal acceptance.",
   path: "/qualifications",
 });
 
@@ -15,31 +15,31 @@ export default function QualificationsPage() {
   return (
     <>
       <PageJsonLd breadcrumbs={crumbs} />
-      <PageShell title="Somalia Expert Witness Qualifications UK" breadcrumbs={crumbs}>
-        <h2 className="text-xl font-bold text-[#0B2D4E]">What Makes a Qualified Somalia Expert</h2>
+      <PageShell title="South Asia Expert Witness Qualifications UK" breadcrumbs={crumbs}>
+        <h2 className="text-xl font-bold text-[#3D1A1A]">What Makes a Qualified South Asia Expert</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
-          A qualified Somalia expert witness holds academic credentials (PhD, MA, or equivalent research background) in
-          African Studies, Political Science, Anthropology, International Relations, or a related discipline. Field
-          research experience in Somalia, Somaliland, and Puntland is essential, not optional.
+          A qualified South Asia expert witness holds academic credentials (PhD, MA, or equivalent research background) in
+          South Asian Studies, Political Science, Anthropology, International Relations, Religious Studies, or a related
+          discipline. Field research experience in the relevant South Asian country is essential, not optional.
         </p>
         <p className="mt-4 text-[#374151] leading-relaxed">
-          Language expertise in Somali, Maay, and af-Tunni demonstrates the ability to assess conditions beyond
-          English-language sources. Current knowledge of country conditions, including MOJ and OA country guidance,
-          July 2025 CPINs, and EUAA October 2025 guidance, is required. Prior tribunal acceptance in Somalia cases
-          demonstrates evidential reliability.
+          Language expertise demonstrates the ability to assess conditions beyond English-language sources. Current
+          knowledge of country conditions, including post-August 2024 Bangladesh dynamics, India Hindutva developments,
+          KK [2021] for Sri Lanka, and Nepal/Bhutan conditions, is required. Prior tribunal acceptance in South Asia
+          cases demonstrates evidential reliability.
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">Key Qualifications for Somalia Experts</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Key Qualifications for South Asia Experts</h2>
         <ul className="mt-4 list-disc space-y-2 pl-6 text-[#374151]">
-          <li>Somali language expertise (Somali, Maay, af-Tunni)</li>
-          <li>Field research experience in Somalia, Somaliland, and Puntland</li>
-          <li>Clan structure and minority group knowledge</li>
-          <li>UNHCR Somalia programme experience</li>
-          <li>Prior tribunal acceptance in Somalia asylum cases</li>
-          <li>Current CPIN and country guidance knowledge (MOJ, OA, AMM)</li>
+          <li>Language expertise: Bengali, Hindi, Tamil, Nepali, Sinhala, Dzongkha</li>
+          <li>Field research experience in South Asian countries</li>
+          <li>Academic expertise in South Asian politics, religion, caste, or law</li>
+          <li>Prior tribunal acceptance in South Asia asylum cases</li>
+          <li>Current CPIN and country guidance knowledge (KK [2021], post-2024 Bangladesh)</li>
+          <li>EIN directory listing or equivalent professional recognition</li>
         </ul>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">
           Immigration Tribunal Practice Direction: Expert Duties
         </h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
@@ -54,13 +54,13 @@ export default function QualificationsPage() {
           legal conclusion on refugee status.
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">Red Flags</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Red Flags</h2>
         <ul className="mt-4 list-disc space-y-2 pl-6 text-[#374151]">
-          <li>Expert without current knowledge of Somalia</li>
+          <li>Expert without current knowledge of the relevant South Asian country</li>
           <li>Reports that simply reproduce CPIN without independent analysis</li>
           <li>No field research or in-country experience</li>
-          <li>Cannot distinguish between regional conditions (Mogadishu, Somaliland, Puntland, south/central)</li>
-          <li>No prior tribunal acceptance in Somalia cases</li>
+          <li>Cannot distinguish between country-specific conditions (Bangladesh post-2024 vs India Hindutva)</li>
+          <li>No prior tribunal acceptance in South Asia cases</li>
         </ul>
       </PageShell>
     </>

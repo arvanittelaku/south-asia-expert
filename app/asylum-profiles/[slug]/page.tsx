@@ -49,13 +49,13 @@ export default async function AsylumProfilePage({ params }: { params: Promise<{ 
 
         <ProfileGeoContent blocks={getProfileGeoContent(slug)} />
 
-        <h2 className="mt-8 break-words text-lg font-bold text-[#0B2D4E] sm:text-xl">Related Case Types</h2>
+        <h2 className="mt-8 break-words text-lg font-bold text-[#3D1A1A] sm:text-xl">Related Case Types</h2>
         <ul className="mt-4 space-y-1">
           {profile.relatedCaseTypes.map((s) => {
             const ct = getCaseType(s);
             return (
               <li key={s}>
-                <Link href={`/case-types/${s}`} className="inline-flex min-h-[44px] items-center text-[#C8922A] hover:underline">
+                <Link href={`/case-types/${s}`} className="inline-flex min-h-[44px] items-center text-[#E8751A] hover:underline">
                   {ct?.title ?? s}
                 </Link>
               </li>

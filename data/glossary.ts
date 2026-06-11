@@ -6,187 +6,213 @@ export type GlossaryTerm = {
 
 export const glossaryTerms: GlossaryTerm[] = [
   {
-    term: "ACLED",
-    slug: "acled",
+    term: "Awami League",
+    slug: "awami-league",
     definition:
-      "Armed Conflict Location & Event Data Project. Provides real-time data on political violence and protest events in Somalia, used by expert witnesses to assess current security conditions and Article 15(c) indiscriminate violence levels.",
+      "The Bangladesh Awami League is a major political party in Bangladesh, led by Sheikh Hasina until her departure in August 2024. Under Awami League governments, BNP and Jamaat supporters faced persecution. Post-August 2024, Awami League supporters may face new risks under the transitional government.",
   },
   {
-    term: "Al-Shabaab",
-    slug: "al-shabaab",
+    term: "BNP (Bangladesh Nationalist Party)",
+    slug: "bnp",
     definition:
-      "Harakat al-Shabaab al-Mujahideen, an Islamist militant group operating as a parallel government across large parts of south-central Somalia. Targets government supporters, tax refusers, and those who escape forced recruitment.",
+      "The Bangladesh Nationalist Party (BNP) is the main opposition party in Bangladesh, historically allied with Jamaat-e-Islami. BNP supporters faced persecution under Awami League governments. The August 2024 political transition has changed the risk dynamic for BNP supporters in asylum claims.",
   },
   {
-    term: "AMM and Others [2011]",
-    slug: "amm-and-others-2011",
+    term: "BJP (Bharatiya Janata Party)",
+    slug: "bjp",
     definition:
-      "AMM and Others (conflict; humanitarian crisis; returnees; FGM) Somalia CG [2011] UKUT 445 (IAC). Leading country guidance establishing that FGM in Somalia constitutes persecution constituting a serious violation of fundamental rights.",
+      "The Bharatiya Janata Party (BJP) is India's ruling party, associated with Hindutva ideology and the RSS. BJP-governed states present higher risk profiles for Muslim, Christian, and other minority asylum claimants from India.",
   },
   {
-    term: "Article 15(c) (Subsidiary Protection)",
-    slug: "article-15c",
+    term: "CAA (Citizenship Amendment Act India)",
+    slug: "caa",
     definition:
-      "Qualification Directive provision granting subsidiary protection where a person faces a serious and individual threat by reason of indiscriminate violence in situations of international or internal armed conflict. Applies to south/central Somalia outside Mogadishu.",
+      "The Citizenship Amendment Act 2019 provides a fast-track path to Indian citizenship for non-Muslim migrants from Afghanistan, Bangladesh, and Pakistan. Combined with the proposed National Register of Citizens (NRC), it creates particular risk for Muslim residents of Assam and other border states.",
   },
   {
-    term: "ATMIS (AU Transition Mission Somalia)",
-    slug: "atmis",
+    term: "Caste (South Asian context)",
+    slug: "caste",
     definition:
-      "African Union Transition Mission in Somalia, the successor to AMISOM. Withdrawal in 2025-2026 creates additional security vacuum as the Federal Government lacks capacity to maintain security without AU support.",
+      "The caste system is a hierarchical social stratification system in South Asia, particularly significant in India and Nepal. Dalits (formerly 'untouchables') face systematic discrimination and violence. Caste may constitute a particular social group (PSG) for asylum purposes where persecution reaches the required threshold.",
   },
   {
-    term: "Clan (Somali clan structure)",
-    slug: "clan",
-    definition:
-      "Somalia's primary social and political organisation. Four major clan families (Hawiye, Darod, Dir, Rahanweyn) provide protection through militias and political connections. Minority groups lack clan protection.",
-  },
-  {
-    term: "CPIN (Country Policy Information Note)",
+    term: "CPIN",
     slug: "cpin",
     definition:
-      "Home Office country policy information notes providing guidance to caseworkers on asylum claims from specific countries. Current Somalia CPINs include July 2025 Mogadishu security and humanitarian notes.",
+      "Country Policy and Information Note. Home Office documents providing country conditions information for asylum decision-making. South Asia CPINs cover Bangladesh, India, Sri Lanka, Nepal, and Bhutan, but may not reflect rapidly changing conditions or profile-specific risk factors.",
   },
   {
-    term: "Darod (clan family)",
-    slug: "darod",
+    term: "Country Guidance Case",
+    slug: "country-guidance-case",
     definition:
-      "One of four major Somali clan families, dominant in Puntland and parts of Somaliland. Sub-clans include Majerteen, Dhulbahante, and Warsangeli. Darod/Harti connections are essential for settlement in Puntland.",
+      "A country guidance case is an Upper Tribunal decision designated as providing authoritative guidance on country conditions for a particular nationality or profile. For Sri Lanka Tamil claims, KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245 is the leading country guidance case.",
   },
   {
-    term: "Dir (clan family)",
-    slug: "dir",
+    term: "Dalit",
+    slug: "dalit",
     definition:
-      "One of four major Somali clan families. The Isaaq sub-clan of Dir is dominant in Somaliland. Dir clans are distributed across Somaliland, parts of Puntland, and central Somalia.",
+      "Dalits are members of the lowest castes in the South Asian caste hierarchy, formerly known as 'untouchables'. Dalits in India and Nepal face systematic social exclusion, economic deprivation, and violence. Dalit status may constitute a particular social group for asylum purposes.",
   },
   {
-    term: "Federal Government of Somalia (FGS)",
-    slug: "fgs",
+    term: "Dzongkha",
+    slug: "dzongkha",
     definition:
-      "The internationally recognised government of Somalia based in Mogadishu. Willing but unable to provide effective protection from Al-Shabaab according to July 2025 CPIN. Former FGS officials face Al-Shabaab targeting on return.",
+      "Dzongkha is the official language of Bhutan. Expert witnesses with Dzongkha language capability can verify Bhutanese documents, media sources, and official communications relevant to Lhotshampa and other Bhutan asylum claims.",
   },
   {
-    term: "FGM (Somalia context)",
-    slug: "fgm",
+    term: "FTT (Immigration & Asylum Chamber)",
+    slug: "ftt",
     definition:
-      "Female genital mutilation. Somalia has one of the highest prevalence rates globally (exceeding 98% in some surveys). AMM [2011] established FGM as persecution. State enforcement of prohibitions is virtually non-existent.",
+      "The First-tier Tribunal (Immigration and Asylum Chamber) is the primary venue for asylum appeals in the UK. South Asian asylum appeals are heard in the FTT before potential onward appeal to the Upper Tribunal.",
   },
   {
-    term: "Gaboye/Madhiban",
-    slug: "gaboye-madhiban",
+    term: "Hindutva",
+    slug: "hindutva",
     definition:
-      "Occupational caste groups in Somalia facing severe discrimination as clan minorities. Lack clan militia protection and are vulnerable to exploitation and violence from majority clan members.",
+      "Hindutva is a political ideology advocating Hindu cultural nationalism in India, promoted by the BJP and RSS. Hindutva targeting of Muslims, Christians, and other minorities is a primary basis for India asylum claims in UK tribunals.",
   },
   {
-    term: "Gosha",
-    slug: "gosha",
+    term: "HJ (Iran) [2010]",
+    slug: "hj-iran-2010",
     definition:
-      "A clan minority group in the Jubba and Shabelle river valleys of south Somalia. Faces severe discrimination and lacks clan protection mechanisms available to major clan members.",
+      "HJ and HT v Secretary of State for the Home Department [2010] UKSC 31. Leading Supreme Court case on LGBT asylum claims, establishing that concealment of sexual orientation to avoid persecution is not a viable solution. Applied to LGBTQ+ South Asian asylum claims including post-decriminalisation India cases.",
   },
   {
-    term: "Hawiye (clan family)",
-    slug: "hawiye",
+    term: "Jamaat-e-Islami Bangladesh",
+    slug: "jamaat-e-islami-bangladesh",
     definition:
-      "One of four major Somali clan families, dominant in Mogadishu and central regions. Sub-clans include Habr Gedir, Abgal, and Murusade. Hawiye clan connections are important for MOJ Mogadishu return analysis.",
+      "Jamaat-e-Islami is an Islamist political party in Bangladesh, historically allied with the BNP. Jamaat supporters faced persecution under Awami League governments. Post-August 2024 conditions may have changed the risk profile for Jamaat-affiliated claimants.",
   },
   {
-    term: "IDP (Internally Displaced Person)",
-    slug: "idp",
+    term: "Janajati (Nepal)",
+    slug: "janajati",
     definition:
-      "Persons displaced within Somalia due to conflict, drought, or clan violence. Mogadishu hosts large IDP populations with limited access to services, relevant to MOJ humanitarian analysis and July 2025 humanitarian CPIN.",
+      "Janajati refers to indigenous ethnic groups in Nepal, including various hill and mountain communities. Janajati groups face political marginalisation and discrimination, generating asylum claims alongside Madhesi and Tharu ethnic minority claims.",
   },
   {
-    term: "ISWAP-Somalia",
-    slug: "iswap-somalia",
+    term: "KK and Others [2021]",
+    slug: "kk-and-others-2021",
     definition:
-      "Islamic State West Africa Province Somalia faction. Operates primarily in Puntland with growing presence. Distinct from Al-Shabaab but poses additional security risk in north-east Somalia.",
+      "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. The leading UK country guidance case on Sri Lanka Tamil asylum claims, establishing risk profiles including actual or imputed LTTE associations, diaspora activists, and those who have given evidence against the government.",
   },
   {
-    term: "Jubaland",
-    slug: "jubaland",
+    term: "Khalistan",
+    slug: "khalistan",
     definition:
-      "Federal member state in south Somalia comprising lower and middle Juba regions. Contested between Federal Government and Al-Shabaab control. High Article 15(c) risk area.",
+      "Khalistan is a separatist movement advocating an independent Sikh state in Punjab, India. Sikh asylum claimants with actual or imputed Khalistan associations face risk from Indian security forces and may generate diaspora activity risk on return.",
   },
   {
-    term: "MOJ and Others [2014]",
-    slug: "moj-and-others-2014",
+    term: "Legal Aid",
+    slug: "legal-aid",
     definition:
-      "MOJ and Others (Return to Mogadishu) Somalia CG [2014] UKUT 004442 (IAC). Leading country guidance for Mogadishu return claims. Established diaspora/clan support test and general finding for ordinary civilians.",
+      "Legal Aid is publicly funded legal assistance for eligible asylum appellants in the UK, administered by the Legal Aid Agency (LAA). Expert witness reports in Legal Aid cases require prior authority from the LAA before instruction.",
   },
   {
-    term: "Mogadishu",
-    slug: "mogadishu",
+    term: "Lhotshampa",
+    slug: "lhotshampa",
     definition:
-      "Capital of Somalia and seat of the Federal Government. Governed by MOJ country guidance framework. Al-Shabaab carries out regular attacks. Clan support or diaspora remittances essential for viable return.",
+      "The Lhotshampa are ethnic Nepali-speaking people who were expelled from Bhutan in the 1990s. Approximately 100,000 fled to Nepal following citizenship stripping. Lhotshampa claims form the primary basis for Bhutan-related asylum claims in UK tribunals.",
   },
   {
-    term: "OA and Others [2022]",
-    slug: "oa-and-others-2022",
+    term: "LTTE (Liberation Tigers of Tamil Eelam)",
+    slug: "ltte",
     definition:
-      "OA and Others (Somalia) CG [2022] UKUT 00033. Updated country guidance on return to Somalia, refining MOJ application to specific profiles and addressing changed conditions since 2014.",
+      "The Liberation Tigers of Tamil Eelam (LTTE) was a Tamil separatist militant organisation in Sri Lanka, defeated in 2009. Post-civil war, actual or imputed LTTE associations remain a key risk factor for Sri Lanka Tamil asylum claims under KK [2021] country guidance.",
   },
   {
-    term: "Puntland",
-    slug: "puntland",
+    term: "Madhesi (Nepal)",
+    slug: "madhesi",
     definition:
-      "Semi-autonomous region in north-east Somalia with its own government and security forces. Generally more stable than south/central Somalia but facing increased Al-Shabaab and ISWAP-Somalia presence.",
+      "Madhesi people are ethnic groups inhabiting the Terai plains of southern Nepal, sharing cultural ties with India. Madhesi communities face political marginalisation and discrimination in Nepal, generating ethnic minority asylum claims.",
   },
   {
-    term: "Rahanweyn/Digil-Mirifle",
-    slug: "rahanweyn",
+    term: "Maoist (Nepal CPN-M)",
+    slug: "maoist-nepal",
     definition:
-      "One of four major Somali clan families, dominant in south-west Somalia (Bay, Bakool regions). Faces significant Al-Shabaab presence and Article 15(c) indiscriminate violence risk.",
+      "The Communist Party of Nepal (Maoist) led an armed insurgency from 1996 to 2006. Nepal asylum claims arise from both those persecuted by Maoists during the insurgency and former Maoist combatants facing retaliation from opponents.",
   },
   {
-    term: "Somaliland",
-    slug: "somaliland",
+    term: "NRC (National Register of Citizens India)",
+    slug: "nrc",
     definition:
-      "Self-declared republic in north-west Somalia, not internationally recognised. More stable than south/central Somalia with functioning government and lower Al-Shabaab presence. Assessed under separate legal framework from MOJ.",
+      "The National Register of Citizens (NRC) is a proposed register of Indian citizens, piloted in Assam. Combined with the Citizenship Amendment Act (CAA), it creates risk for Muslim residents who may be excluded from citizenship and face detention or deportation.",
   },
   {
-    term: "State Protection (Somalia)",
+    term: "PSG (Particular Social Group)",
+    slug: "psg",
+    definition:
+      "A Particular Social Group is one of the five grounds for refugee status under the Refugee Convention 1951. In South Asian asylum claims, PSGs may include Dalits, LGBTQ+ individuals, religious minorities, and women facing gender-based persecution.",
+  },
+  {
+    term: "Refugee Convention 1951",
+    slug: "refugee-convention-1951",
+    definition:
+      "The Convention Relating to the Status of Refugees 1951, as amended by the 1967 Protocol. The foundation of UK asylum law, defining a refugee as someone with a well-founded fear of persecution for reasons of race, religion, nationality, membership of a particular social group, or political opinion.",
+  },
+  {
+    term: "RSS (Rashtriya Swayamsevak Sangh)",
+    slug: "rss",
+    definition:
+      "The Rashtriya Swayamsevak Sangh (RSS) is a Hindu nationalist volunteer organisation, the ideological parent of the BJP. RSS networks have national reach in India, relevant to internal relocation arguments and Muslim minority persecution claims.",
+  },
+  {
+    term: "s377 IPC/PPC",
+    slug: "s377",
+    definition:
+      "Section 377 of the Indian Penal Code (IPC) and Pakistan/Bangladesh Penal Code (PPC) criminalises 'unnatural offences'. India decriminalised s377 in 2018 (Navtej Singh Johar). Bangladesh retains criminalisation. Sri Lanka retains similar provisions. Expert witnesses assess both legal and social persecution.",
+  },
+  {
+    term: "Sinhalese",
+    slug: "sinhalese",
+    definition:
+      "The Sinhalese are the majority ethnic group in Sri Lanka, predominantly Buddhist. Sinhalese Buddhist nationalism creates the political context for Tamil persecution and affects risk assessment for political opposition and human rights defender claims in Sri Lanka.",
+  },
+  {
+    term: "State Protection",
     slug: "state-protection",
     definition:
-      "The availability of effective state protection from persecution or serious harm. July 2025 CPIN confirms the FGS is willing but unable to protect citizens from Al-Shabaab. State protection is generally unavailable across Somalia.",
+      "State protection analysis assesses whether the authorities in the country of origin are willing and able to protect the appellant from persecution. A central issue in South Asian asylum claims, where formal legal protections often exist but practical enforcement is inconsistent for minorities.",
   },
   {
-    term: "UNHCR Eligibility Guidelines",
-    slug: "unhcr-eligibility-guidelines",
+    term: "Tamil Eelam",
+    slug: "tamil-eelam",
     definition:
-      "UNHCR guidelines on international protection needs of asylum seekers from Somalia. 2024 edition cautions against generalised return and emphasises individual assessment of clan support and personal profile.",
+      "Tamil Eelam is the proposed independent Tamil homeland in northern and eastern Sri Lanka, advocated by the LTTE and Tamil diaspora organisations. Tamil Eelam advocacy in the UK can create or enhance risk profiles for Sri Lanka Tamil asylum claimants on return.",
   },
   {
-    term: "UNSOM",
-    slug: "unsom",
+    term: "UNHCR Guidelines",
+    slug: "unhcr-guidelines",
     definition:
-      "United Nations Assistance Mission in Somalia. Provides reporting on security, humanitarian, and political developments used by expert witnesses in country condition analysis.",
+      "UNHCR issues guidelines on international protection for specific profiles and situations. UNHCR guidelines on gender-based persecution, LGBT persons, and religious minorities are relevant to South Asian asylum claims in UK tribunals.",
+  },
+  {
+    term: "Upper Tribunal (IAC)",
+    slug: "upper-tribunal",
+    definition:
+      "The Upper Tribunal (Immigration and Asylum Chamber) hears appeals from FTT decisions and issues country guidance cases binding on lower tribunals. KK and Others [2021] is the leading Upper Tribunal country guidance case for Sri Lanka Tamil claims.",
+  },
+  {
+    term: "Valmiki (India caste group)",
+    slug: "valmiki",
+    definition:
+      "Valmiki is a Dalit caste group in India, traditionally associated with sanitation work. Valmiki communities face severe social stigma, economic exclusion, and violence. Caste-based persecution claims from Valmiki appellants require community-specific expert analysis.",
   },
   {
     term: "Well-Founded Fear",
     slug: "well-founded-fear",
     definition:
-      "The standard for refugee status under the 1951 Refugee Convention: a reasonable degree of likelihood that the applicant would face persecution if returned. Expert evidence informs the objective country conditions element of this assessment.",
+      "A well-founded fear of persecution is the central test for refugee status under the Refugee Convention 1951. The fear must be subjectively genuine and objectively well-founded, assessed against current country conditions with the benefit of expert evidence.",
   },
   {
-    term: "Benadiri (Reer Hamar)",
-    slug: "benadiri",
+    term: "EIN (Expert Inquiry Network)",
+    slug: "ein",
     definition:
-      "Clan minority group of Mogadishu and coastal towns with distinct cultural identity. Faces severe discrimination and lacks major clan protection. Particularly vulnerable in Mogadishu return analysis under MOJ.",
+      "The Expert Inquiry Network (EIN) directory lists country experts covering Bangladesh, Bhutan, India, Myanmar, Nepal, Pakistan, Sri Lanka, and Tibet. SouthAsiaExpert connects UK solicitors with qualified experts from this network.",
   },
   {
-    term: "Bantu",
-    slug: "bantu",
+    term: "Navtej Singh Johar [2018]",
+    slug: "navtej-singh-johar",
     definition:
-      "Clan minority communities in the Jubba and Shabelle river valleys descended from historical Bantu populations. Face severe discrimination as clan minorities without access to clan militia protection.",
-  },
-  {
-    term: "EUAA Country Guidance",
-    slug: "euaa-country-guidance",
-    definition:
-      "European Union Agency for Asylum country guidance on Somalia. Updated October 2025 with revised actors of protection chapter. Cited alongside Home Office CPINs in UK tribunal expert reports.",
+      "Navtej Singh Johar v Union of India (2018) is the Indian Supreme Court decision decriminalising same-sex conduct under section 377 IPC. Decriminalisation does not eliminate social persecution, and LGBTQ+ India asylum claims remain viable under the HJ (Iran) standard.",
   },
 ];
-
-export function getGlossaryTerm(slug: string): GlossaryTerm | undefined {
-  return glossaryTerms.find((t) => t.slug === slug);
-}

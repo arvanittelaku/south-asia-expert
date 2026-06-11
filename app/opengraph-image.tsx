@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "SomaliaExpert - Somalia Expert Witness Services UK";
+export const alt = "SouthAsiaExpert - South Asia Expert Witness Services UK";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -15,7 +15,7 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#0B2D4E",
+          backgroundColor: "#3D1A1A",
           padding: 80,
         }}
       >
@@ -29,19 +29,19 @@ export default function OpenGraphImage() {
             lineHeight: 1.1,
           }}
         >
-          SomaliaExpert
+          SouthAsiaExpert
         </div>
         <p
           style={{
             marginTop: 32,
             fontSize: 36,
             fontWeight: 600,
-            color: "#C8922A",
+            color: "#E8751A",
             textAlign: "center",
             lineHeight: 1.3,
           }}
         >
-          Somalia Expert Witness Services UK
+          South Asia Expert Witness Services UK
         </p>
       </div>
     ),

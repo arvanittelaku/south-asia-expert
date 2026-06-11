@@ -4,11 +4,11 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { SITE_EMAIL } from "@/lib/constants";
 import { postSubmitLead } from "@/lib/submit-lead";
-import { CASE_PROFILES, FUNDING_OPTIONS, PROCEEDINGS, REGIONS, URGENCY_OPTIONS } from "@/data/contact-options";
+import { CASE_PROFILES, COUNTRIES, FUNDING_OPTIONS, PROCEEDINGS, URGENCY_OPTIONS } from "@/data/contact-options";
 
 const inputClass =
-  "w-full min-w-0 rounded-[8px] border border-[#C8D8E4] px-4 py-3 text-base text-[#374151] focus:border-[#0B2D4E] focus:outline-none focus:ring-1 focus:ring-[#0B2D4E] min-h-[44px]";
-const labelClass = "mb-1 block text-sm font-medium text-[#0B2D4E]";
+  "w-full min-w-0 rounded-[8px] border border-[#E8D0C0] px-4 py-3 text-base text-[#374151] focus:border-[#3D1A1A] focus:outline-none focus:ring-1 focus:ring-[#3D1A1A] min-h-[44px]";
+const labelClass = "mb-1 block text-sm font-medium text-[#3D1A1A]";
 
 export function ContactForm() {
   const router = useRouter();
@@ -26,7 +26,7 @@ export function ContactForm() {
       email: String(data.get("email") ?? "").trim(),
       phone: String(data.get("phone") ?? "").trim(),
       caseProfile: String(data.get("case_profile") ?? "").trim(),
-      region: String(data.get("region") ?? "").trim(),
+      region: String(data.get("country") ?? "").trim(),
       proceedings: String(data.get("proceedings") ?? "").trim(),
       funding: String(data.get("funding") ?? "").trim(),
       deadline: String(data.get("deadline") ?? "").trim(),
@@ -70,6 +70,19 @@ export function ContactForm() {
 
       <div className="grid min-w-0 gap-5 sm:grid-cols-2">
         <div className="min-w-0">
+          <label className={labelClass} htmlFor="country">
+            Country
+          </label>
+          <select id="country" name="country" className={inputClass}>
+            <option value="">Select country</option>
+            {COUNTRIES.map((c) => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="min-w-0">
           <label className={labelClass} htmlFor="case_profile">
             Profile
           </label>
@@ -78,19 +91,6 @@ export function ContactForm() {
             {CASE_PROFILES.map((p) => (
               <option key={p} value={p}>
                 {p}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="region">
-            Region
-          </label>
-          <select id="region" name="region" className={inputClass}>
-            <option value="">Select region</option>
-            {REGIONS.map((r) => (
-              <option key={r} value={r}>
-                {r}
               </option>
             ))}
           </select>
@@ -174,7 +174,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[8px] bg-[#C8922A] px-6 py-3 text-base font-semibold text-white hover:bg-[#b07f22] disabled:opacity-60 sm:w-auto"
+        className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[8px] bg-[#E8751A] px-6 py-3 text-base font-semibold text-white hover:bg-[#d0640f] disabled:opacity-60 sm:w-auto"
       >
         {status === "loading" ? "Submitting..." : "Instruct an Expert"}
       </button>

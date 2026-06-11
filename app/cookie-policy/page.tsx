@@ -6,9 +6,9 @@ import { CATEGORY_META } from "@/lib/cookies/constants";
 import { SITE_EMAIL } from "@/lib/constants";
 
 export const metadata = createMetadata({
-  title: "Cookie Policy | SomaliaExpert",
+  title: "Cookie Policy | SouthAsiaExpert",
   description:
-    "How SomaliaExpert.com uses cookies and similar technologies, your choices under UK GDPR and ePrivacy, and how to manage preferences.",
+    "How SouthAsiaExpert.com uses cookies and similar technologies, your choices under UK GDPR and ePrivacy, and how to manage preferences.",
   path: "/cookie-policy",
 });
 
@@ -20,40 +20,40 @@ export default function CookiePolicyPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell title="Cookie Policy" subtitle="Last updated: June 2026" breadcrumbs={crumbs}>
         <p className="text-[#374151] leading-relaxed">
-          This Cookie Policy explains how SomaliaExpert.com (&quot;we&quot;, &quot;us&quot;) uses
+          This Cookie Policy explains how SouthAsiaExpert.com (&quot;we&quot;, &quot;us&quot;) uses
           cookies and similar technologies when you visit our website. It should be read alongside
           our{" "}
-          <Link href="/privacy" className="font-semibold text-[#C8922A] hover:underline">
+          <Link href="/privacy" className="font-semibold text-[#E8751A] hover:underline">
             Privacy Policy
           </Link>
           . We comply with the UK GDPR, the Privacy and Electronic Communications Regulations
           (PECR), and apply CCPA-aligned transparency for California visitors.
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">What are cookies?</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">What are cookies?</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
           Cookies are small text files stored on your device when you visit a website. We also use
           local storage to remember your cookie consent choices (with a 12-month expiry) and may
           load third-party tags only after you grant consent.
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">Google Consent Mode</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Google Consent Mode</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
           Before you make a choice, we set Google Consent Mode v2 defaults that deny analytics,
           advertising, and personalization storage. When you accept or customise preferences, we
           update consent signals immediately so Google tags respect your choices.
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">Cookie categories</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Cookie categories</h2>
         <div className="mt-4 space-y-4">
           {(Object.keys(CATEGORY_META) as Array<keyof typeof CATEGORY_META>).map((key) => {
             const meta = CATEGORY_META[key];
             return (
-              <section key={key} className="rounded-[8px] border border-[#C8D8E4] bg-[#F4F8FB] p-4">
-                <h3 className="font-semibold text-[#0B2D4E]">{meta.label}</h3>
+              <section key={key} className="rounded-[8px] border border-[#E8D0C0] bg-[#FDF5F0] p-4">
+                <h3 className="font-semibold text-[#3D1A1A]">{meta.label}</h3>
                 <p className="mt-2 text-sm text-[#374151]">{meta.description}</p>
                 {meta.required && (
-                  <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#C8922A]">
+                  <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#E8751A]">
                     Always active
                   </p>
                 )}
@@ -62,7 +62,7 @@ export default function CookiePolicyPage() {
           })}
         </div>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">Third-party services</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Third-party services</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
           Depending on your consent choices, we may load:
         </p>
@@ -77,30 +77,30 @@ export default function CookiePolicyPage() {
           you opt in via our cookie banner.
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">Your choices</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Your choices</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
           On your first visit you can Accept All, Reject Non-Essential, or Customize Preferences.
           Change your mind anytime using Cookie Settings in the website footer. Consent is stored in
           your browser for up to 12 months, after which we will ask again.
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">California residents (CCPA)</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">California residents (CCPA)</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
           We do not sell personal information. Non-essential cookies used for analytics or marketing
           are disabled until you provide consent. You may withdraw consent at any time via Cookie
           Settings.
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">Browser controls</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Browser controls</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
           You can block or delete cookies through your browser settings. Blocking necessary cookies
           may prevent us from remembering your consent preferences.
         </p>
 
-        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">Contact</h2>
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Contact</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
           Questions about cookies:{" "}
-          <a href={`mailto:${SITE_EMAIL}`} className="font-semibold text-[#C8922A] hover:underline">
+          <a href={`mailto:${SITE_EMAIL}`} className="font-semibold text-[#E8751A] hover:underline">
             {SITE_EMAIL}
           </a>
         </p>

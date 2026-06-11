@@ -6,9 +6,9 @@ import { createMetadata } from "@/lib/metadata";
 import { asylumProfiles } from "@/data/asylum-profiles";
 
 export const metadata = createMetadata({
-  title: "Somali Asylum Profiles | Expert Witness Evidence UK",
+  title: "South Asian Asylum Profiles | Expert Witness Evidence UK",
   description:
-    "All major Somali asylum profiles covered by qualified expert witnesses: clan minorities, Al-Shabaab, FGM, failed asylum seekers, diaspora, former officials, and women.",
+    "All major South Asian asylum profiles covered by qualified expert witnesses: political persecution, religious minorities, LGBTQ+, caste, GBV, journalists, diaspora, and failed asylum seekers.",
   path: "/asylum-profiles",
 });
 
@@ -19,14 +19,14 @@ export default function AsylumProfilesPage() {
     <>
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
-        title="Somali Asylum Profiles"
-        subtitle="Dedicated expert witness evidence for each major Somali asylum profile in UK immigration tribunals."
+        title="South Asian Asylum Profiles"
+        subtitle="Dedicated expert witness evidence for each major South Asian asylum profile in UK immigration tribunals."
         breadcrumbs={crumbs}
       >
         <p className="mb-8 text-[#374151] leading-relaxed">
-          Somalia is one of the most legally complex asylum jurisdictions in the UK system. Each profile below links to
-          a dedicated page with country guidance analysis, CPIN references, and profile-specific expert evidence
-          guidance for solicitors and Legal Aid practitioners.
+          South Asia generates significant asylum claim volumes across Bangladesh, India, Sri Lanka, Nepal, and Bhutan.
+          Each profile below links to a dedicated page with country-specific analysis, CPIN references, and
+          profile-specific expert evidence guidance for solicitors and Legal Aid practitioners.
         </p>
         <CardGrid
           items={asylumProfiles.map((p) => ({
@@ -36,9 +36,9 @@ export default function AsylumProfilesPage() {
           }))}
         />
         <p className="mt-8 text-[#374151]">
-          For MOJ country guidance analysis, see our{" "}
-          <Link href="/moj-country-guidance" className="font-semibold text-[#C8922A] hover:underline">
-            MOJ country guidance pillar page
+          For a complete overview, see our{" "}
+          <Link href="/south-asia-asylum-explained" className="font-semibold text-[#E8751A] hover:underline">
+            South Asia asylum explained pillar page
           </Link>
           .
         </p>

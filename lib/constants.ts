@@ -1,15 +1,16 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://www.somaliaexpert.com";
-export const SITE_NAME = "SomaliaExpert";
-export const SITE_EMAIL = "info@somaliaexpert.com";
-export const LINKEDIN_URL = "https://www.linkedin.com/company/SomaliaExpertWitness";
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://www.southasiaexpert.com";
+export const SITE_NAME = "SouthAsiaExpert";
+export const SITE_EMAIL = "info@southasiaexpert.com";
+export const LINKEDIN_URL = "https://www.linkedin.com/company/SouthAsiaExpertWitness";
 
 export const COLORS = {
-  primary: "#0B2D4E",
-  accent: "#C8922A",
+  primary: "#3D1A1A",
+  accent: "#E8751A",
+  highlight: "#1B5E20",
   background: "#FFFFFF",
-  sectionAlt: "#F4F8FB",
-  border: "#C8D8E4",
-  heading: "#0B2D4E",
+  sectionAlt: "#FDF5F0",
+  border: "#E8D0C0",
+  heading: "#3D1A1A",
   body: "#374151",
 } as const;

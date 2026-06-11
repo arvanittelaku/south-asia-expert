@@ -2,8 +2,8 @@ import { PageShell } from "@/components/layout/PageShell";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Terms of Use | SomaliaExpert",
-  description: "Terms of use for SomaliaExpert.com",
+  title: "Terms of Use | SouthAsiaExpert",
+  description: "Terms of use for SouthAsiaExpert.com",
   path: "/terms",
   noindex: true,
   follow: true,
@@ -13,7 +13,7 @@ export default function TermsPage() {
   return (
     <PageShell title="Terms of Use" breadcrumbs={[{ label: "Home", href: "/" }, { label: "Terms" }]}>
       <p className="text-[#374151] leading-relaxed">
-        SomaliaExpert.com is an expert witness matching service for UK immigration solicitors. We are not a law firm
+        SouthAsiaExpert.com is an expert witness matching service for UK immigration solicitors. We are not a law firm
         and do not provide legal advice. Expert witnesses instructed through this service provide independent evidence
         to tribunals; their duty is to the tribunal, not to either party.
       </p>

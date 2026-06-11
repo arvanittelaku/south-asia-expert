@@ -1,7 +1,7 @@
 import type { CookieCategory } from "./types";
 
-/** localStorage key - Somalia Expert branded */
-export const CONSENT_STORAGE_KEY = "se_cookie_consent_v1";
+/** localStorage key - South Asia Expert branded */
+export const CONSENT_STORAGE_KEY = "sae_cookie_consent_v1";
 
 /** Increment to invalidate stored consent and show banner again */
 export const CONSENT_VERSION = 1;

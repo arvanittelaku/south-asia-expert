@@ -7,18 +7,24 @@ import { chromium } from "playwright";
 
 const BASE = process.argv[2] ?? "http://127.0.0.1:3000";
 const VIEWPORTS = [
+  { name: "mobile-xs", width: 320, height: 568 },
   { name: "mobile", width: 375, height: 667 },
   { name: "tablet", width: 768, height: 1024 },
   { name: "desktop", width: 1280, height: 800 },
+  { name: "desktop-xl", width: 1536, height: 900 },
 ];
 const PATHS = [
   "/",
   "/contact",
-  "/moj-country-guidance",
+  "/countries",
+  "/countries/bangladesh",
+  "/countries/india",
+  "/countries/sri-lanka",
+  "/south-asia-asylum-explained",
   "/cpin-country-guidance",
-  "/asylum-profiles/clan-minority-groups",
-  "/regions/mogadishu-return",
-  "/guides/al-shabaab-asylum-guide",
+  "/asylum-profiles/political-persecution-south-asia",
+  "/case-types/bangladesh-political-claims",
+  "/guides/bangladesh-asylum-2024-guide",
   "/glossary",
   "/services",
 ];

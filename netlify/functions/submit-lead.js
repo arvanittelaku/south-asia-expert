@@ -3,7 +3,7 @@
  * Update BRAND_NAME when copying to another brand site.
  * For full Google Sheets support, use Next.js app/api/submit-lead (Netlify Next plugin).
  */
-const BRAND_NAME = "Somalia Expert";
+const BRAND_NAME = "South Asia Expert";
 
 function getLeadNotificationUrl() {
   return (

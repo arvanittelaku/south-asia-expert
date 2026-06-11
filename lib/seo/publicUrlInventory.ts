@@ -1,8 +1,8 @@
 import { SITE_URL } from "../constants";
 import { asylumProfiles } from "../../data/asylum-profiles";
 import { caseTypes } from "../../data/case-types";
+import { countries } from "../../data/countries";
 import { guides } from "../../data/guides";
-import { regions } from "../../data/regions";
 
 export type PublicUrlEntry = {
   path: string;
@@ -12,12 +12,12 @@ export type PublicUrlEntry = {
 
 export const APP_STATIC_PATHS: PublicUrlEntry[] = [
   { path: "/", priority: 1.0, changefreq: "weekly" },
-  { path: "/moj-country-guidance", priority: 0.95, changefreq: "monthly" },
+  { path: "/south-asia-asylum-explained", priority: 0.95, changefreq: "monthly" },
+  { path: "/countries", priority: 0.95, changefreq: "monthly" },
   { path: "/asylum-profiles", priority: 0.93, changefreq: "monthly" },
-  { path: "/regions", priority: 0.93, changefreq: "monthly" },
   { path: "/cpin-country-guidance", priority: 0.9, changefreq: "monthly" },
   { path: "/services", priority: 0.9, changefreq: "monthly" },
-  { path: "/what-is-a-somalia-expert-witness", priority: 0.9, changefreq: "monthly" },
+  { path: "/what-is-a-south-asia-expert-witness", priority: 0.9, changefreq: "monthly" },
   { path: "/case-types", priority: 0.88, changefreq: "monthly" },
   { path: "/how-to-instruct", priority: 0.88, changefreq: "monthly" },
   { path: "/qualifications", priority: 0.88, changefreq: "monthly" },
@@ -30,6 +30,14 @@ export const NON_INDEXABLE_PATHS = ["/contact", "/thank-you", "/privacy", "/term
 
 export const ROBOTS_DISALLOW_PATHS = ["/thank-you", "/api/"] as const;
 
+const COUNTRY_PRIORITIES: Record<string, number> = {
+  bangladesh: 0.94,
+  india: 0.94,
+  "sri-lanka": 0.93,
+  nepal: 0.92,
+  bhutan: 0.9,
+};
+
 function dynamicEntries(): PublicUrlEntry[] {
   return [
     ...asylumProfiles.map((p) => ({
@@ -37,9 +45,9 @@ function dynamicEntries(): PublicUrlEntry[] {
       priority: 0.92,
       changefreq: "monthly" as const,
     })),
-    ...regions.map((r) => ({
-      path: `/regions/${r.slug}`,
-      priority: 0.92,
+    ...countries.map((c) => ({
+      path: `/countries/${c.slug}`,
+      priority: COUNTRY_PRIORITIES[c.slug] ?? 0.9,
       changefreq: "monthly" as const,
     })),
     ...caseTypes.map((c) => ({

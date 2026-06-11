@@ -1,16 +1,16 @@
 import { asylumProfiles } from "./asylum-profiles";
 import { caseTypes } from "./case-types";
+import { countries } from "./countries";
 import { guides } from "./guides";
-import { regions } from "./regions";
 
 export const asylumProfilesNavLinks = asylumProfiles.map((p) => ({
   label: p.title,
   href: `/asylum-profiles/${p.slug}`,
 }));
 
-export const regionsNavLinks = regions.map((r) => ({
-  label: r.title,
-  href: `/regions/${r.slug}`,
+export const countriesNavLinks = countries.map((c) => ({
+  label: c.title,
+  href: `/countries/${c.slug}`,
 }));
 
 export const caseTypesNavLinks = caseTypes.map((c) => ({
@@ -19,7 +19,7 @@ export const caseTypesNavLinks = caseTypes.map((c) => ({
 }));
 
 export const resourcesNavLinks = [
-  { label: "MOJ Country Guidance", href: "/moj-country-guidance" },
+  { label: "South Asia Asylum Explained", href: "/south-asia-asylum-explained" },
   { label: "CPIN & Country Guidance", href: "/cpin-country-guidance" },
   { label: "Solicitor Guides", href: "/guides" },
   { label: "How to Instruct", href: "/how-to-instruct" },
@@ -34,12 +34,12 @@ export const guidesNavLinks = guides.map((g) => ({
 
 export const mobileNavGroups = [
   {
-    title: "Asylum Profiles",
-    links: [{ label: "All Asylum Profiles", href: "/asylum-profiles" }, ...asylumProfilesNavLinks],
+    title: "Countries",
+    links: [{ label: "All Countries", href: "/countries" }, ...countriesNavLinks],
   },
   {
-    title: "Regions",
-    links: [{ label: "All Regions", href: "/regions" }, ...regionsNavLinks],
+    title: "Asylum Profiles",
+    links: [{ label: "All Asylum Profiles", href: "/asylum-profiles" }, ...asylumProfilesNavLinks],
   },
   {
     title: "Case Types",

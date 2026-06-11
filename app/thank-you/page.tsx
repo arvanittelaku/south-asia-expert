@@ -2,7 +2,7 @@ import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Thank You | SomaliaExpert",
+  title: "Thank You | SouthAsiaExpert",
   description: "Your instruction request has been received.",
   path: "/thank-you",
   noindex: true,
@@ -12,13 +12,13 @@ export const metadata = createMetadata({
 export default function ThankYouPage() {
   return (
     <>
-      <section className="bg-[#0B2D4E] py-16 md:py-24">
+      <section className="bg-[#3D1A1A] py-16 md:py-24">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">
           <div
-            className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#C8922A]/20"
+            className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#E8751A]/20"
             aria-hidden="true"
           >
-            <svg className="h-8 w-8 text-[#C8922A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="h-8 w-8 text-[#E8751A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
@@ -32,7 +32,7 @@ export default function ThankYouPage() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="/"
-              className="inline-flex min-h-[44px] min-w-[200px] items-center justify-center rounded-[8px] bg-[#C8922A] px-8 py-3 font-semibold text-white transition hover:bg-[#b07f22]"
+              className="inline-flex min-h-[44px] min-w-[200px] items-center justify-center rounded-[8px] bg-[#E8751A] px-8 py-3 font-semibold text-white transition hover:bg-[#d0640f]"
             >
               Return to Homepage
             </Link>
@@ -46,19 +46,19 @@ export default function ThankYouPage() {
         </div>
       </section>
 
-      <section className="bg-[#F4F8FB] py-12">
+      <section className="bg-[#FDF5F0] py-12">
         <div className="mx-auto max-w-2xl px-4 text-center text-[#374151] sm:px-6">
-          <h2 className="text-lg font-semibold text-[#0B2D4E]">What happens next?</h2>
+          <h2 className="text-lg font-semibold text-[#3D1A1A]">What happens next?</h2>
           <ul className="mt-4 space-y-3 text-left text-sm leading-relaxed">
-            <li>We review your case details and match you with a qualified Somalia expert witness.</li>
+            <li>We review your case details and match you with a qualified South Asia expert witness.</li>
             <li>You receive a response within one business day with proposed scope and timeline.</li>
             <li>Legal Aid cases: confirm LAA prior authority before the expert begins work.</li>
           </ul>
           <Link
             href="/how-to-instruct"
-            className="mt-6 inline-flex min-h-[44px] items-center font-semibold text-[#C8922A] hover:underline"
+            className="mt-6 inline-flex min-h-[44px] items-center font-semibold text-[#E8751A] hover:underline"
           >
-            How to instruct a Somalia expert witness
+            How to instruct a South Asia expert witness
           </Link>
         </div>
       </section>

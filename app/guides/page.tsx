@@ -6,9 +6,9 @@ import { createMetadata } from "@/lib/metadata";
 import { guides } from "@/data/guides";
 
 export const metadata = createMetadata({
-  title: "Somalia Asylum Solicitor Guides | Expert Evidence Resources",
+  title: "South Asia Asylum Solicitor Guides | Expert Evidence Resources",
   description:
-    "Solicitor guides on MOJ framework, clan structure, Al-Shabaab, FGM, Somaliland/Puntland, and instructing Somalia expert witnesses for UK tribunals.",
+    "Solicitor guides on Bangladesh post-2024, India Hindutva, Sri Lanka KK [2021], South Asia CPINs, Nepal/Bhutan, and instructing South Asia expert witnesses.",
   path: "/guides",
 });
 
@@ -19,14 +19,14 @@ export default function GuidesPage() {
     <>
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
-        title="Solicitor Guides: Somalia Expert Evidence"
-        subtitle="Practical guides for UK immigration solicitors instructing Somalia country expert witnesses."
+        title="Solicitor Guides: South Asia Expert Evidence"
+        subtitle="Practical guides for UK immigration solicitors instructing South Asia country expert witnesses."
         breadcrumbs={crumbs}
       >
         <p className="mb-8 text-[#374151] leading-relaxed">
-          These guides cover MOJ country guidance, clan structure analysis, Al-Shabaab risk assessment, FGM claims,
-          regional analysis for Somaliland and Puntland, and the instruction process for Legal Aid and privately funded
-          cases.
+          These guides cover Bangladesh post-August 2024 conditions, India Hindutva and minority claims, Sri Lanka KK
+          [2021] framework, South Asia CPINs, Nepal and Bhutan expert evidence, and the instruction process for Legal
+          Aid and privately funded cases.
         </p>
         <CardGrid
           items={guides.map((g) => ({
@@ -36,9 +36,9 @@ export default function GuidesPage() {
           }))}
         />
         <p className="mt-8 text-[#374151]">
-          For MOJ country guidance analysis, see our{" "}
-          <Link href="/moj-country-guidance" className="font-semibold text-[#C8922A] hover:underline">
-            MOJ country guidance pillar page
+          For a complete overview, see our{" "}
+          <Link href="/south-asia-asylum-explained" className="font-semibold text-[#E8751A] hover:underline">
+            South Asia asylum explained pillar page
           </Link>
           .
         </p>

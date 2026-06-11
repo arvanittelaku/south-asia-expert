@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import { appendRow, isGoogleSheetsConfigured } from "@/lib/google-sheets";
 import {
+  buildLeadSheetRow,
   buildLeadWebhookPayload,
   getLeadWebhookUrl,
-  LEAD_BRAND_NAME,
   type SubmitLeadPayload,
 } from "@/lib/submit-lead";
 
@@ -43,21 +43,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid email address" }, { status: 400 });
   }
 
-  const row = [
-    new Date().toISOString(),
-    fullName,
-    sanitize(body.organisation ?? ""),
-    email,
-    phone,
-    sanitize(body.caseProfile ?? ""),
-    sanitize(body.region ?? ""),
-    sanitize(body.proceedings ?? ""),
-    sanitize(body.funding ?? ""),
-    body.deadline ?? "",
-    sanitize(body.urgency ?? ""),
-    sanitize(body.summary ?? ""),
-    LEAD_BRAND_NAME,
-  ];
+  const row = buildLeadSheetRow({ ...body, fullName, email, phone });
 
   if (isGoogleSheetsConfigured()) {
     try {

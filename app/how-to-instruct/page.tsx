@@ -5,22 +5,22 @@ import { RelatedLinks } from "@/components/ui/RelatedLinks";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "How to Instruct a Somalia Expert Witness UK | Step-by-Step Guide",
+  title: "How to Instruct a South Asia Expert Witness UK | Step-by-Step Guide",
   description:
-    "Step-by-step guide for UK solicitors on instructing a Somalia expert witness for asylum appeals, Legal Aid cases, and immigration tribunal proceedings.",
+    "Step-by-step guide for UK solicitors on instructing a South Asia expert witness for asylum appeals, Legal Aid cases, and immigration tribunal proceedings.",
   path: "/how-to-instruct",
 });
 
 const steps = [
   {
     n: 1,
-    title: "Identify the Profile and Region",
-    body: "Determine the appellant's asylum profile (clan minority, Al-Shabaab, FGM, failed asylum seeker, etc.) and region of origin (Mogadishu, Somaliland, Puntland, south/central). This determines whether MOJ, Article 15(c), or regional analysis applies.",
+    title: "Identify the Country and Profile",
+    body: "Determine the appellant's country of origin (Bangladesh, India, Sri Lanka, Nepal, or Bhutan) and asylum profile (political persecution, religious minority, LGBTQ+, caste, journalist/HRD, diaspora activity). This determines the expert specialism and report scope.",
   },
   {
     n: 2,
     title: "Legal Aid or Privately Funded?",
-    body: "Most Somalia expert reports in asylum proceedings are Legal Aid funded. Confirm funding status before instruction. Privately funded cases follow a different fee structure.",
+    body: "Most South Asia expert reports in asylum proceedings are Legal Aid funded. Confirm funding status before instruction. Privately funded cases follow a different fee structure.",
   },
   {
     n: 3,
@@ -30,7 +30,7 @@ const steps = [
   {
     n: 4,
     title: "Letter of Instruction",
-    body: "Provide a detailed letter of instruction specifying the expert's role, questions to address, hearing date, and funding arrangements. Reference relevant country guidance (MOJ [2014], OA [2022]) and CPINs (July 2025 Mogadishu security).",
+    body: "Provide a detailed letter of instruction specifying the expert's role, questions to address, hearing date, and funding arrangements. Reference relevant country guidance (KK [2021] for Sri Lanka) and current CPINs.",
   },
   {
     n: 5,
@@ -40,12 +40,12 @@ const steps = [
   {
     n: 6,
     title: "Expert Analysis and Report",
-    body: "The expert prepares an independent report addressing the letter of instruction. Standard reports take 2 to 3 weeks. Urgent reports available within 7 days.",
+    body: "The expert prepares an independent report addressing the letter of instruction. Standard reports take 2 to 4 weeks. Urgent reports available within 72 hours subject to expert availability.",
   },
   {
     n: 7,
     title: "Written Questions and Oral Evidence",
-    body: "If required, respond to written questions from the opposing party. Oral evidence is common in MOJ country guidance cases or where the tribunal directs expert attendance.",
+    body: "If required, respond to written questions from the opposing party. Oral evidence is common in complex political persecution cases, KK [2021] Sri Lanka claims, or where the tribunal directs expert attendance.",
   },
 ];
 
@@ -56,18 +56,18 @@ export default function HowToInstructPage() {
     <>
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
-        title="How to Instruct a Somalia Expert Witness"
+        title="How to Instruct a South Asia Expert Witness"
         subtitle="Seven steps for UK immigration solicitors and Legal Aid practitioners."
         breadcrumbs={crumbs}
       >
         <div className="space-y-6">
           {steps.map((s) => (
-            <div key={s.n} className="flex gap-4 rounded-[8px] border border-[#C8D8E4] bg-white p-6">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0B2D4E] font-bold text-white">
+            <div key={s.n} className="flex gap-4 rounded-[8px] border border-[#E8D0C0] bg-white p-6">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#3D1A1A] font-bold text-white">
                 {s.n}
               </span>
               <div>
-                <h2 className="font-bold text-[#0B2D4E]">{s.title}</h2>
+                <h2 className="font-bold text-[#3D1A1A]">{s.title}</h2>
                 <p className="mt-2 text-[#374151]">{s.body}</p>
               </div>
             </div>
@@ -76,14 +76,14 @@ export default function HowToInstructPage() {
 
         <RelatedLinks
           links={[
-            { label: "Instructing guide", href: "/guides/instructing-somalia-expert" },
+            { label: "Instructing guide", href: "/guides/instructing-south-asia-expert" },
             { label: "Qualifications", href: "/qualifications" },
             { label: "Contact us", href: "/contact" },
           ]}
         />
         <Link
           href="/contact"
-          className="mt-8 inline-flex min-h-[44px] items-center rounded-[8px] bg-[#C8922A] px-6 py-3 font-semibold text-white"
+          className="mt-8 inline-flex min-h-[44px] items-center rounded-[8px] bg-[#E8751A] px-6 py-3 font-semibold text-white"
         >
           Instruct an Expert
         </Link>

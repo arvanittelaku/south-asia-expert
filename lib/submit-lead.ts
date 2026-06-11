@@ -1,4 +1,40 @@
-export const LEAD_BRAND_NAME = "Somalia Expert";
+export const LEAD_BRAND_NAME = "South Asia Expert";
+
+/** Row 1 headers in Google Sheet tab (GOOGLE_SHEET_TAB_NAME) — order must match buildLeadSheetRow() */
+export const LEAD_SHEET_COLUMNS = [
+  "Timestamp",
+  "Full Name",
+  "Law Firm",
+  "Email",
+  "Phone",
+  "Profile",
+  "Country",
+  "Proceedings",
+  "Funding",
+  "Deadline",
+  "Urgency",
+  "Case Summary",
+  "Brand name",
+] as const;
+
+export function buildLeadSheetRow(payload: SubmitLeadPayload): (string | number | boolean | null)[] {
+  const sanitize = (str: string) => str.replace(/<[^>]*>/g, "").trim();
+  return [
+    new Date().toISOString(),
+    sanitize(payload.fullName ?? ""),
+    sanitize(payload.organisation ?? ""),
+    (payload.email ?? "").toLowerCase().trim(),
+    sanitize(payload.phone ?? ""),
+    sanitize(payload.caseProfile ?? ""),
+    sanitize(payload.region ?? ""),
+    sanitize(payload.proceedings ?? ""),
+    sanitize(payload.funding ?? ""),
+    payload.deadline ?? "",
+    sanitize(payload.urgency ?? ""),
+    sanitize(payload.summary ?? ""),
+    LEAD_BRAND_NAME,
+  ];
+}
 
 export type SubmitLeadInput = {
   fullName: string;

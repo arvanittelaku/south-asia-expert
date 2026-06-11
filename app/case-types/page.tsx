@@ -6,9 +6,9 @@ import { createMetadata } from "@/lib/metadata";
 import { caseTypes } from "@/data/case-types";
 
 export const metadata = createMetadata({
-  title: "Somalia Asylum Case Types | Expert Witness UK",
+  title: "South Asia Asylum Case Types | Expert Witness UK",
   description:
-    "Somalia expert witness evidence for FTT asylum appeals, Upper Tribunal, Article 15(c), FGM, Somaliland, clan minority, deportation, and fresh claims.",
+    "South Asia expert witness evidence for FTT appeals, Upper Tribunal, Bangladesh political claims, India minority claims, Sri Lanka Tamil, deportation, and fresh claims.",
   path: "/case-types",
 });
 
@@ -19,14 +19,14 @@ export default function CaseTypesPage() {
     <>
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
-        title="Somalia Asylum Case Types"
-        subtitle="Expert witness evidence for all major UK immigration tribunal proceedings involving Somali nationals."
+        title="South Asia Asylum Case Types"
+        subtitle="Expert witness evidence for all major UK immigration tribunal proceedings involving South Asian nationals."
         breadcrumbs={crumbs}
       >
         <p className="mb-8 text-[#374151] leading-relaxed">
-          SomaliaExpert provides qualified country expert witnesses for First-tier Tribunal appeals, Upper Tribunal
-          proceedings, Article 15(c) south/central Somalia claims, FGM asylum, Somaliland analysis, clan minority
-          claims, deportation and removal, and fresh claims with updated country guidance.
+          SouthAsiaExpert provides qualified country expert witnesses for First-tier Tribunal appeals, Upper Tribunal
+          proceedings, Bangladesh political claims, India minority claims, Sri Lanka Tamil claims under KK [2021],
+          deportation and removal, fresh claims, and certification challenges.
         </p>
         <CardGrid
           items={caseTypes.map((c) => ({
@@ -37,12 +37,12 @@ export default function CaseTypesPage() {
         />
         <p className="mt-8 text-[#374151]">
           See also our{" "}
-          <Link href="/asylum-profiles" className="font-semibold text-[#C8922A] hover:underline">
+          <Link href="/asylum-profiles" className="font-semibold text-[#E8751A] hover:underline">
             asylum profiles hub
           </Link>{" "}
           and{" "}
-          <Link href="/regions" className="font-semibold text-[#C8922A] hover:underline">
-            regional analysis pages
+          <Link href="/countries" className="font-semibold text-[#E8751A] hover:underline">
+            country pages
           </Link>
           .
         </p>

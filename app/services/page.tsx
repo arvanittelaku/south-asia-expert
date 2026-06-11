@@ -8,9 +8,9 @@ import { servicesPageGraph } from "@/lib/schema";
 import { services } from "@/data/services";
 
 export const metadata = createMetadata({
-  title: "Somalia Expert Witness Services | Asylum & Immigration Tribunals",
+  title: "South Asia Expert Witness Services | Asylum & Immigration Tribunals",
   description:
-    "Somalia expert witness services: country condition reports, clan analysis, Al-Shabaab risk assessment, FGM reports, MOJ framework, CPIN challenge, and oral evidence.",
+    "South Asia expert witness services: Bangladesh, India, Sri Lanka, Nepal, Bhutan country reports, CPIN challenge, internal relocation, post-August 2024 Bangladesh, and oral evidence.",
   path: "/services",
 });
 
@@ -26,28 +26,30 @@ export default function ServicesPage() {
         )}
       />
       <PageShell
-        title="Somalia Expert Witness Services"
-        subtitle="CPR Part 35 and Immigration Tribunal Practice Direction compliant reports for all major Somali asylum profiles."
+        title="South Asia Expert Witness Services"
+        subtitle="CPR Part 35 and Immigration Tribunal Practice Direction compliant reports for all major South Asian asylum profiles."
         breadcrumbs={crumbs}
       >
         <p className="mb-8 text-[#374151] leading-relaxed">
-          SomaliaExpert provides eight specialist expert witness services for UK immigration solicitors, law firms, and
-          Legal Aid practitioners. All reports are prepared by qualified Somalia country experts with current CPIN
-          knowledge, MOJ framework expertise, and field research experience in Somalia, Somaliland, and Puntland.
+          SouthAsiaExpert provides eight specialist expert witness services for UK immigration solicitors, law firms, and
+          Legal Aid practitioners. All reports are prepared by qualified South Asia country experts with current CPIN
+          knowledge, country guidance expertise, and field research experience across Bangladesh, India, Sri Lanka,
+          Nepal, and Bhutan.
         </p>
         <CardGrid
           items={services.map((s) => ({
+            id: s.id,
             title: s.title,
             description: s.description,
           }))}
         />
         <p className="mt-8 text-[#374151]">
           Questions about instructing an expert? See{" "}
-          <Link href="/how-to-instruct" className="font-semibold text-[#C8922A] hover:underline">
+          <Link href="/how-to-instruct" className="font-semibold text-[#E8751A] hover:underline">
             how to instruct
           </Link>{" "}
           or{" "}
-          <Link href="/contact" className="font-semibold text-[#C8922A] hover:underline">
+          <Link href="/contact" className="font-semibold text-[#E8751A] hover:underline">
             contact us
           </Link>
           .
