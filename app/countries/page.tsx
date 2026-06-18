@@ -28,6 +28,11 @@ export default function CountriesPage() {
           and &quot;India asylum expert UK&quot;, providing profile-specific risk analysis for UK immigration
           tribunals. Pakistan is covered separately at pakistancountryexpert.com.
         </p>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          No country page promotes one community or political position over another. Content is structured for UK
+          solicitors instructing experts in tribunal proceedings and describes the full range of asylum profiles seen in
+          each jurisdiction, analysed on an impartial basis.
+        </p>
         <div className="mt-10">
           <CardGrid
             items={countries.map((c) => ({

@@ -23,6 +23,11 @@ export default function ContactPage() {
         </div>
         <aside className="h-fit rounded-[8px] border border-[#E8D0C0] bg-[#FDF5F0] p-5 sm:p-6">
           <h2 className="font-bold text-[#3D1A1A]">Why instruct through SouthAsiaExpert</h2>
+          <p className="mt-4 text-sm text-[#374151] leading-relaxed">
+            We are an impartial matching service for UK solicitors. Experts instructed through us provide independent
+            tribunal evidence across all five South Asian countries and all major asylum profiles, without affiliation
+            to any political party, diaspora group, or regional interest.
+          </p>
           <ul className="mt-4 space-y-4 text-sm text-[#374151]">
             <li>Five South Asian countries covered: Bangladesh, India, Sri Lanka, Nepal, Bhutan</li>
             <li>Post-August 2024 Bangladesh and KK [2021] Sri Lanka specialists</li>

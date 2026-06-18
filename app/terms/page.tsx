@@ -18,6 +18,12 @@ export default function TermsPage() {
         to tribunals; their duty is to the tribunal, not to either party.
       </p>
       <p className="mt-4 text-[#374151] leading-relaxed">
+        SouthAsiaExpert is politically neutral. We are not a diaspora organisation, lobby group, or campaign for any
+        South Asian government, opposition movement, or regional interest. Information on this site covers multiple
+        countries and opposing claim profiles so that solicitors can instruct experts for any meritorious case. Nothing
+        on the site should be read as endorsement of any political, religious, or ethnic position.
+      </p>
+      <p className="mt-4 text-[#374151] leading-relaxed">
         By using this website you agree to use it for legitimate instruction enquiries only. We reserve the right to
         decline instructions that fall outside our scope or expertise. Content on this site is for general information
         and does not constitute legal advice.

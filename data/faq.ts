@@ -19,6 +19,11 @@ export const faqs: FAQ[] = [
       "SouthAsiaExpert covers Bangladesh, India, Sri Lanka, Nepal, and Bhutan. Pakistan is covered separately at pakistancountryexpert.com. We provide country condition reports and expert witness evidence for asylum appeals and immigration tribunal proceedings involving nationals of these five South Asian countries.",
   },
   {
+    question: "Is SouthAsiaExpert politically neutral?",
+    answer:
+      "Yes. SouthAsiaExpert is an impartial expert witness matching service, not a diaspora organisation, political campaign, or advocacy group. We connect UK solicitors with independent country experts who assess conditions objectively for tribunals, regardless of which political party, religious community, or profile the appellant belongs to. Our content covers opposing claim types with equal depth — for example BNP and Awami League political claims, Tamil diaspora and Sri Lankan government risk profiles, and majority and minority religious persecution — because expert evidence must reflect country conditions as they are, not advance any side in a dispute.",
+  },
+  {
     question: "What happened in Bangladesh in August 2024?",
     answer:
       "In August 2024, mass student protests led to the fall of Sheikh Hasina's Awami League government. Hasina fled to India, fundamentally altering the asylum landscape for Bangladesh. Former BNP and Jamaat supporters who were persecuted under Hasina may now face changed country conditions, while Awami League supporters face new risks. Expert evidence on post-August 2024 conditions is essential.",

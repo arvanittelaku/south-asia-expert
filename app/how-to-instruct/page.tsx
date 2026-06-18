@@ -60,6 +60,12 @@ export default function HowToInstructPage() {
         subtitle="Seven steps for UK immigration solicitors and Legal Aid practitioners."
         breadcrumbs={crumbs}
       >
+        <p className="mb-8 max-w-3xl text-[#374151] leading-relaxed">
+          Experts instructed through SouthAsiaExpert are selected for academic and field-research qualifications, not
+          political alignment. The expert&apos;s duty is to the tribunal under CPR Part 35 — to provide impartial
+          country analysis whether the solicitor acts for the appellant or the respondent, and regardless of which
+          South Asian country or asylum profile is at issue.
+        </p>
         <div className="space-y-6">
           {steps.map((s) => (
             <div key={s.n} className="flex gap-4 rounded-[8px] border border-[#E8D0C0] bg-white p-6">

@@ -43,6 +43,13 @@ export default function SouthAsiaAsylumExplainedPage() {
           of asylum claims from visa holders. This guide explains the legal landscape, key profiles, country guidance
           framework, and the critical role of expert evidence for UK immigration solicitors.
         </p>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          This guide is written for practitioners, not for any political or diaspora audience. It describes asylum
+          profiles and country conditions across Bangladesh, India, Sri Lanka, Nepal, and Bhutan with equal analytical
+          weight — including opposing political factions, majority and minority religious claims, and return-risk
+          assessments — because tribunal-ready expert evidence must reflect conditions objectively, regardless of which
+          side instructs the expert.
+        </p>
 
         <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">South Asia: Key Asylum Statistics</h2>
         <div className="mt-4 table-scroll overflow-x-auto">

@@ -47,6 +47,20 @@ export default function WhatIsSouthAsiaExpertWitnessPage() {
           Sri Lanka Tamil claims under KK [2021], and Nepal/Bhutan claims where no UK country guidance exists.
         </p>
 
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Political Neutrality and Regional Balance</h2>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          SouthAsiaExpert is not aligned with any South Asian government, opposition party, diaspora organisation, or
+          advocacy network. The service exists to help UK solicitors obtain impartial country evidence for tribunal
+          proceedings, not to promote any country&apos;s interests or any single community&apos;s narrative.
+        </p>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          Country pages and asylum profiles on this site cover the full range of claim types seen in UK tribunals —
+          including claims from political opponents on all sides, religious majorities and minorities, diaspora activists
+          and those without diaspora involvement, and return-risk assessments for failed asylum seekers. Expert witnesses
+          instructed through this service analyse the evidence on its merits and report what the sources show, whether
+          that supports or undermines the appellant&apos;s case.
+        </p>
+
         <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Report Standards</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
           South Asia expert reports comply with CPR Part 35 and Immigration Tribunal Practice Direction paragraph 10.

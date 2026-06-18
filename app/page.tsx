@@ -71,6 +71,12 @@ export default function HomePage() {
             reflect the appellant&apos;s specific country, profile, or personal risk factors. Independent expert
             evidence is essential.
           </p>
+          <p className="mt-4 max-w-3xl text-[#374151] leading-relaxed">
+            SouthAsiaExpert is politically neutral. We are not affiliated with any government, diaspora group, or
+            political movement in South Asia. The site provides balanced country information and expert matching across
+            all five jurisdictions and all major asylum profiles — instructing solicitors for appellants from every
+            background, with experts whose duty is to the tribunal, not to either party.
+          </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
@@ -84,6 +90,10 @@ export default function HomePage() {
               {
                 title: "Legal Aid Compatible",
                 desc: "LAA prior authority rates available for all major South Asian asylum profiles in FTT and Upper Tribunal proceedings.",
+              },
+              {
+                title: "Impartial Country Analysis",
+                desc: "Experts assess conditions objectively under CPR Part 35. Reports address the instructed questions without advocacy for any political, religious, or regional interest.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-[8px] border border-[#E8D0C0] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.08)]">

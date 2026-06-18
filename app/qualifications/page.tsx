@@ -54,6 +54,14 @@ export default function QualificationsPage() {
           legal conclusion on refugee status.
         </p>
 
+        <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Neutrality Across Countries and Profiles</h2>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          A qualified South Asia expert must be able to analyse conditions in any of the five covered countries without
+          personal or political bias. Experts may be instructed by solicitors acting for appellants or respondents; in
+          either role, the analysis must remain neutral. SouthAsiaExpert selects experts on academic and field-research
+          credentials, not on alignment with any political faction, diaspora group, or regional interest.
+        </p>
+
         <h2 className="mt-10 text-xl font-bold text-[#3D1A1A]">Red Flags</h2>
         <ul className="mt-4 list-disc space-y-2 pl-6 text-[#374151]">
           <li>Expert without current knowledge of the relevant South Asian country</li>
@@ -61,6 +69,7 @@ export default function QualificationsPage() {
           <li>No field research or in-country experience</li>
           <li>Cannot distinguish between country-specific conditions (Bangladesh post-2024 vs India Hindutva)</li>
           <li>No prior tribunal acceptance in South Asia cases</li>
+          <li>Evidence of political advocacy or one-sided commentary on South Asian affairs</li>
         </ul>
       </PageShell>
     </>

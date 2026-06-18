@@ -63,7 +63,9 @@ export function Footer() {
           </div>
         </div>
         <p className="mt-10 border-t border-white/20 pt-6 text-center text-xs text-white/60">
-          SouthAsiaExpert.com connects UK solicitors with qualified South Asia expert witnesses. We are not a law firm and do not provide legal advice.
+          SouthAsiaExpert.com connects UK solicitors with qualified South Asia expert witnesses. We are not a law firm
+          and do not provide legal advice. We are not a diaspora organisation or political advocacy group. Content
+          covers Bangladesh, India, Sri Lanka, Nepal, and Bhutan on an impartial basis for tribunal proceedings.
         </p>
         <p className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center text-xs text-white/50">
           <Link href="/privacy" className="inline-flex min-h-[44px] items-center hover:text-white">
